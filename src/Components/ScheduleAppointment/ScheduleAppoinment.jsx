@@ -324,10 +324,8 @@ function ScheduleAppoinment({ children }) {
 
                 <div className="sheduleappointment-box1-div1-div2-del">
                   <RiDeleteBin5Line
-                    style={{
-                      width: "30%",
-                      height: "30%",
-                    }}
+                  className="sheduleappointment-box1-div1-div2-del-img"
+                 
                   />
                 </div>
               </div>
@@ -1110,13 +1108,8 @@ function ScheduleAppoinment({ children }) {
             <div className="sheduleappointment-box2">
               <div className="sheduleappointment-box2-div">
                 <div
-                  style={{
-                    width: "auto",
-                    // height: "40px",
-                    display: "flex",
-                    margin: "0px",
-                    padding: "0px",
-                  }}
+                className="sheduleappointment-box2-div-heading"
+              
                 >
                   {" "}
                   <h4>Formal Shirt sizes Measuring Guide</h4>
