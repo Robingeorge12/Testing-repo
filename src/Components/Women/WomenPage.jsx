@@ -16,6 +16,7 @@ import wo3 from "../../Assets/Image/wo3.svg";
 import wo4 from "../../Assets/Image/wo4.svg";
 import wo5 from "../../Assets/Image/wo5.svg";
 import wo6 from "../../Assets/Image/wo6.svg";
+import { useNavigate } from "react-router-dom";
 
 let data = [
   {
@@ -63,6 +64,13 @@ let data = [
 ];
 
 function WomenPage() {
+
+const navigate = useNavigate()
+
+const handleProduct = ()=>{
+  navigate("/product")
+}
+
 let len = data.length
 console.log(len)
 
@@ -81,7 +89,7 @@ console.log(len)
           onSwiper={(swiper) => console.log(swiper)}
         >
           {data?.map((el, i) => (
-            <SwiperSlide key={i} style={{marginLeft:"65px"}}>
+            <SwiperSlide key={i} style={{marginLeft:"65px"}} onClick={handleProduct}>
               <div className="women-card-div">
                     <div className="women-card-img">
                     <img src={el.img} alt="" />

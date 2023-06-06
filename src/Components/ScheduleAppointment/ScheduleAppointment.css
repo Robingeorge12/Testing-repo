@@ -851,11 +851,8 @@ div.sheduleappointment-card-opton1:hover{
 }
 
 
-
-
-
 @media screen and (max-width: 768px) {
-  .sheduleappointment-container {
+  .noti-container {
     width: 100vw;
     height: auto;
     /* border: 1px solid green; */
@@ -867,7 +864,7 @@ div.sheduleappointment-card-opton1:hover{
     flex-direction: column;
   }
 
-  .sheduleappointment-container-div1 {
+  .noti-container-div1 {
     width: 80%;
     height: 40%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
@@ -877,7 +874,7 @@ div.sheduleappointment-card-opton1:hover{
     padding-bottom: 10px;
   }
 
-  .sheduleappointment-container-div2 {
+  .noti-container-div2 {
     width: 80%;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -887,26 +884,22 @@ div.sheduleappointment-card-opton1:hover{
     margin-bottom: 10px;
 }
 
-.sheduleappointment-text2 {
-  display: none;
-}
-
   .horizotal-line1 {
     display: none;
   }
-  .sheduleappointment-button-info {
+  .noti-button-info {
     display: none;
   }
 
-  .sheduleappointment-address-text {
+  .noti-address-text {
     display: none;
   }
 
-  .sheduleappointment-size-text {
+  .noti-size-text {
     display: none;
   }
 
-  .sheduleappointment-text2 {
+  .noti-text2 {
     display: none;
   }
 
@@ -914,12 +907,15 @@ div.sheduleappointment-card-opton1:hover{
     display: none;
   }
 
-  .sheduleappointment-card-opton1 {
+  .noti-card-opton1 {
     display: none;
   }
 
+  .noti-text2 {
+    display: none;
+  }
 
-  .sheduleappointment-container-div2 {
+  .noti-container-div2 {
     width: 80%;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
@@ -929,7 +925,7 @@ div.sheduleappointment-card-opton1:hover{
     /* overflow: hidden; */
   }
 
-  .sheduleappointment-box1 {
+  .noti-box1 {
     width: 80%;
     height: auto;
     border: 1px solid grey;
@@ -943,7 +939,7 @@ div.sheduleappointment-card-opton1:hover{
     /* justify-content: space-evenly; */
   }
 
-  .sheduleappointment-container-div2-box1-sizebox {
+  .noti-container-div2-box1-sizebox {
     width: auto;
     height: auto;
     /* display: flex; */
@@ -952,7 +948,7 @@ div.sheduleappointment-card-opton1:hover{
     margin-top: 20px;
   }
 
-  .sheduleappointment-box1 {
+  .noti-box1 {
     width: 100%;
     height: auto;
     border: 1px solid grey;
@@ -966,8 +962,24 @@ div.sheduleappointment-card-opton1:hover{
     /* justify-content: space-evenly; */
   }
 
+  .noti-box1-im1{
+    position: relative;
+    left: -154px;
+    top: 212px;
+    width: 27%;
+    height: 100%;
+}
 
+.noti-box1-im2 {
+  position: relative;
+  left: 30px;
+  width: 46%;
+  height: 100%;
+}
 
 
 
 }
+
+
+
