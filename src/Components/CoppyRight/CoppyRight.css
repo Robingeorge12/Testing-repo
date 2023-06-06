@@ -1,0 +1,32 @@
+.coppy-container{
+
+    width:100vw;
+    height: 6vh;
+    /* border:1px solid red; */
+    margin:auto;
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.coppy-container-img{
+/* background-color: aliceblue; */
+background-color: black;
+width:40%;
+height: 70%;
+display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coppy-container-img>img{
+
+    width:100%;
+    height: 100%; 
+}
+.coppy-container-text{
+    color:white;
+    font-size: 20px;
+
+}

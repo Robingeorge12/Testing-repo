@@ -1,0 +1,8 @@
+@import '~react-image-gallery/styles/css/image-gallery.css';
+
+.product-image-div{
+width: 400px;
+height: 400px;
+border: 1px solid red;
+/* thumbnailPosition:left; */
+}

@@ -1,0 +1,916 @@
+.addaddress-container {
+    width: 100vw;
+    height: 90vh;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 15px;
+  }
+  
+  .addaddress-container-div1 {
+    width: 30%;
+    height: 93%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* margin: auto; */
+  }
+  
+  .addaddress-name-box {
+    width: 80%;
+    height: 90px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 8px;
+  }
+  
+  .addaddress-name-box1 {
+    width: 35%;
+    height: 98%;
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .addaddress-name-box1 > div {
+    width: 80%;
+    height: 90%;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .addaddress-name-box1 > div > img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .addaddress-name-box2 {
+    width: 60%;
+    height: 98%;
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* background-color: rgb(51, 255, 0); */
+    text-align: left;
+  }
+  
+  .addaddress-icon-box {
+    width: 80%;
+    height: 20px;
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 8px;
+  }
+  
+  .addaddress-name-icon {
+    width: 8%;
+    height: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .addaddress-name-text {
+    width: 70%;
+    height: 90%;
+    /* border: 1px solid rgb(208, 19, 19); */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  .addaddress-text2 {
+    width: 80%;
+    height: 23px;
+    /* border:1px solid grey; */
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .horizotal-line1 {
+    width: 80%;
+    border: 1px solid grey;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    /* border-radius: 8px; */
+  }
+  
+  .addaddress-button-info {
+    width: 80%;
+    height: 20px;
+    /* border:1px solid grey; */
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+  }
+  .addaddress-button-info > button {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    text-align: center;
+    border:none;
+    background-color: white;
+    font-weight:500;
+    font-size:15px;
+  }
+  
+  .addaddress-address-text {
+    width: 80%;
+    height: 20px;
+    /* border:1px solid grey; */
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .addaddress-size-text {
+    width: 80%;
+    height: 20px;
+    /* border:1px solid grey; */
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .horizotal-line2 {
+    width: 80%;
+    border: 1px solid grey;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    /* border-radius: 8px; */
+  }
+  
+  .addaddress-card-opton1 {
+    width: 80%;
+    height: 20px;
+    /* border:1px solid grey; */
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  
+  /* second section */
+  
+  
+  
+  .addaddress-card-opton2 {
+    width: 80%;
+    height: 20px;
+    /* border: 1px solid grey; */
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .addaddress-card-opton3 {
+    width: 80%;
+    height: 20px;
+    border:1px solid grey;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .addaddress-container-div2 {
+    width: 68%;
+    height: 93%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* display: flex; */
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  .addaddress-container-div2-box1 {
+    width: 95%;
+    height: 84%;
+    margin: auto;
+    display: flex;
+    /* border: 1px solid rgb(45, 0, 128); */
+    border-radius: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+  
+    /* align-items: center; */
+    /* background-color: aqua; */
+  }
+  
+  .addaddress-container-div2-box1-sizebox {
+    width: auto;
+    height: 400px;
+    /* margin: auto; */
+    display: flex;
+    /* border: 1px solid rgb(21, 128, 0); */
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .addaddress-box1 {
+    width: 360px;
+    height: 475px;
+    border: 1px solid grey;
+    /* background-color: aqua; */
+    padding:0px 0px 39px 10px;
+    border-radius: 10px;
+    justify-content: space;
+  }
+  
+  .addaddress-box1-details {
+    width: 100%;
+    height: 60%;
+    /* border: 3px soild black; */
+    object-position: left;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+  }
+  
+  .addaddress-box2 {
+    width: 150px;
+    height: 100%;
+    /* border: 1px solid rgb(255, 0, 191); */
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .addaddress-img-bottom {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: right;
+    /* text-align: right; */
+    
+  }
+  
+  .addaddress-img-bottom1{
+      width:50px;
+      height: 100%;
+      border: 1px solid black;
+      border-radius:50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: right;
+  }
+  
+  .addaddress-personal-div {
+    width: 90%;
+    height: 350px;
+    /* border: 3px solid yellow; */
+    box-sizing: border-box;
+    margin: 0px;
+    /* margin-top: -50px; */
+  }
+  
+  .addaddress-personal-add {
+    width: 100%;
+    height: 10%;
+    border: 1px solid grey;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+  }
+  
+  .addaddress-main-div {
+    width: 100%;
+    height: 390px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    /* background-color: aqua; */
+    /* flex-shrink: 0; */
+    justify-content: left;
+    border-radius: 8px;
+    padding: 0px 0px 30px 0px;
+  }
+  
+  .addaddress-details-container {
+    width: 100%;
+    height: 280px;
+    /* border:1px solid blue; */
+    /* margin-left: 10px; */
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    box-sizing: border-box;
+    margin-top: 15px;
+    /* flex-shrink: 1; */
+  }
+  
+  .addaddress-details-container-box1 {
+    width: 27%;
+    height: 100%;
+    /* border: 2px solid rgb(230, 7, 7); */
+    gap: 10px;
+  }
+  
+  .addaddress-details-container-box2 {
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid rgb(230, 7, 7); */
+  }
+  
+  .addaddress-details-container-box3 {
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid rgb(230, 7, 7); */
+  }
+  
+
+  div.addaddress-size-text:hover{
+    background-color:black;
+    color:white;
+    border-radius: 5px;
+    height: 30px;
+}
+div.addaddress-address-text:hover{
+    background-color:black;
+    color:white;
+    border-radius: 5px;
+    height: 30px;
+}
+div.addaddress-card-opton1:hover{
+    background-color:black;
+    color:white;
+    border-radius: 5px;
+    height: 30px;
+}
+/* div.addaddress-button-info:hover{
+    background-color:black;
+    color:white;
+    border-radius: 5px;
+    height: 30px;
+} */
+
+.addaddress-button-info > button:hover{
+  background-color:black;
+  color:white;
+  border-radius: 5px;
+  height: 30px;
+}
+/* {.../............/.............../........../} */
+.addaddress-container-div2-box1-heading {
+  display: flex;
+  justify-content: left;
+  height: 30px;
+  margin-top: -13px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.addaddress-container-div2-box1-learndiv {
+  display: flex;
+  width: 37.5%;
+  height: 40px;
+  /* border: 1px solid red; */
+  border-radius: 6px;
+  margin-left: 20px;
+  background-color: black;
+}
+.addaddress-container-div2-box1-learndiv-btn{
+
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  width: 92%;
+  /* height: 112%; */
+  background-color: black;
+  border: none;
+  border-radius: 6px 0px 0px 6px;
+}
+.addaddress-container-div2-box1-learndiv-btn-icon{
+
+  width: 5%;
+  /* height: 124%; */
+  background-color: black;
+  border-radius: 0px 4px 4px 0px;
+  display: flex;
+  justify-content: left;
+}
+.addaddress-container-div2-box1-learndiv-btn-icon-style{
+  width: 100%;
+  height: 100%;
+  color:white;
+}
+.addaddress-box1-div1{
+
+  width: 100%;
+   height: 30%;
+    display: flex;
+}
+
+.addaddress-box1-div2 {
+  width: 59%;
+  height: 83%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.addaddress-box1-div3{
+
+  width: 50%;
+  height: 80%;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:48px;
+}
+.addaddress-box1-details-div1{
+
+  width: 30%;
+  height: 50px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin:auto;
+  margin:0px 0px 0px 143px;
+  gap:5px;
+}
+.addaddress-box1-details-div1-ip{
+  width: 100%;
+  height: 25px;
+  border: none;
+}
+.addaddress-box1-icon-del-div{
+  width:20%;
+  height: 100%;
+  margin: 10px 0px 0px 25px;
+}
+.addaddress-box1-details-div1-icon-div{
+display: flex;
+justify-content: left;
+padding: 3px 0px;
+  /* margin: 10px 0px 0px 25px; */
+}
+.addaddress-box1-details-div1-icon{
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  /* margin: 10px 0px 0px 25px; */
+}
+
+.addaddress-box1-icon-del-div {
+  width: 15%;
+  height: 100%;
+  margin: 10px 0px 0px 25px;
+}
+.addaddress-box1-div3-img{
+  width:72%;
+  height:100%;
+}
+.addaddress-box1-details-name {
+  margin-top: -16px;
+  margin-left: -27px;
+}
+
+
+
+@media screen and (max-width:1440px){
+
+  .addaddress-container-div1 {
+    width: 30%;
+    height: 98%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* margin: auto; */
+}
+  .addaddress-container-div2 {
+    width: 68%;
+    height: 98%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* display: flex; */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+  .addaddress-box1 {
+    width: 384px;
+    height: 425px;
+    border: 1px solid grey;
+    /* background-color: aqua; */
+    padding: 0px 0px 39px 10px;
+    border-radius: 10px;
+    justify-content: space;
+}
+.addaddress-box1-div1 {
+  width: 100%;
+  height: 26%;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.addaddress-box1-details-div1 {
+  width: 30%;
+  height: 50px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin: -11px 0px 0px 143px;
+  gap: 5px;
+}
+
+.addaddress-box1-div2 {
+    width: 59%;
+    height: 106%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.addaddress-box1-details-name {
+  margin-top: -9px;
+  margin-left: -9px;
+}
+
+}
+
+
+
+
+@media screen and (max-width:1024px){
+
+  .addaddress-container-div1 {
+    width: 30%;
+    height: 98%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+
+}
+  .addaddress-container-div2 {
+    width: 68%;
+    height: 98%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* display: flex; */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.addaddress-container-div2-box1 {
+  width: 85%;
+  height: 84%;
+  margin: auto;
+  display: flex;
+  /* border: 1px solid rgb(45, 0, 128); */
+  border-radius: 10px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.addaddress-container-div2-box1-learndiv {
+  display: flex;
+  width: 74%;
+  height: 30px;
+  /* border: 1px solid red; */
+  border-radius: 6px;
+  margin-left: 20px;
+  flex-wrap: wrap;
+  background-color: black;
+  margin-top: -10px;
+}
+.addaddress-container-div2-box1-learndiv-btn {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  width: 94%;
+  /* height: 112%; */
+  background-color: black;
+  border: none;
+  border-radius: 6px 0px 0px 6px;
+}
+.addaddress-container-div2-box1-learndiv-btn-icon {
+  width: 6%;
+  /* height: 127%; */
+}
+
+.addaddress-box1-div2 {
+  width: 45%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 87px;
+}
+.addaddress-box1-details-name {
+  margin: 0px;
+  margin-top: -10px;
+  margin-left: -21px;
+}
+
+/* {heading div css..................................} */
+.addaddress-container-div2-box1-heading {
+  display: flex;
+  /* justify-content: center; */
+  width: 70%;
+  height: 36px;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  align-items: center;
+  font-size: 21px;
+  margin: -17px 0px 20px 21px;
+}
+
+.addaddress-box1 {
+  width: 430px;
+  height: 450px;
+  border: 1px solid grey;
+  /* background-color: aqua; */
+  padding: 0px 0px 30px 10px;
+  border-radius: 10px;
+  justify-content: space;
+  /* margin: auto; */
+}
+
+.addaddress-box1-div3-img{
+  width:72%;
+  height: 80%;
+}
+
+
+
+}
+/* {.....................................} */
+@media screen and (max-width:768px){
+
+
+  .addaddress-container {
+    width: 100vw;
+    height: 90vh;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 15px;
+    flex-direction: column;
+    margin-top: 333px;
+}
+
+.addaddress-container-div1 {
+  width: 80%;
+  height: 70%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: auto;
+  padding-bottom: 10px;
+  margin-top: -210px;
+}
+
+
+.horizotal-line1{
+  display: none;
+}
+.addaddress-button-info{
+  display: none;
+}
+
+.addaddress-address-text{
+  display: none;
+}
+
+.addaddress-size-text{
+  display: none;
+}
+
+.addaddress-text2{
+  display: none;
+}
+
+.horizotal-line2{
+  display: none;
+}
+
+.addaddress-card-opton1{
+display: none;
+}
+
+.addaddress-text2{
+  display: none;
+}
+
+.addaddress-container-div2-box1 {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  /* border: 1px solid rgb(45, 0, 128); */
+  border-radius: 10px;
+  /* align-items: center; */
+  margin-top: 30px;
+  /* background-color: aqua; */
+  /* padding-bottom: 10px; */
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.addaddress-container-div2-box1-sizebox {
+  width: 96%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 10px;
+  /* margin-top: 20px; */
+  /* margin-left: 20px; */
+  /* margin: auto; */
+  flex-direction: column;
+  /* background-color: blueviolet; */
+}
+
+.addaddress-container-div2-box1-sizebox {
+  width: 83%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 10px;
+  /* margin-top: 20px; */
+  /* margin-left: 20px; */
+  /* margin: auto; */
+  flex-direction: column;
+  /* background-color: blueviolet; */
+}
+
+.addaddress-box1 {
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* background-color: aqua; */
+    padding: 0px 0px 30px 10px;
+    border-radius: 10px;
+}
+
+.addaddress-container-div2-box1-heading {
+  display: flex;
+  justify-content: left;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  height: 34px;
+  width: 509px;
+  /* border: 1px solid red; */
+  margin: 0px 51.42px 28px 51.4px;
+}
+.addaddress-container-div2-box1-learndiv {
+  display: flex;
+  width: 83%;
+  height: 40px;
+  /* border: 1px solid red; */
+  border-radius: 6px;
+  margin-left: 51.42px;
+  background-color: black;
+  margin-bottom: 32px;
+  margin-right: 51.42px;
+}
+.addaddress-container-div2-box1-learndiv-btn {
+  font-size: 26px;
+  font-weight: 400;
+  color: white;
+  width: 93%;
+  height: 112%;
+  background-color: black;
+  border: none;
+  border-radius: 6px 0px 0px 6px;
+  display: flex;
+  align-items: center;
+}
+.addaddress-container-div2-box1-learndiv-btn-icon {
+  width: 7%;
+  /* height: 127%; */
+}
+.addaddress-box1-div2 {
+  width: 53%;
+  height: 160px;
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 86px;
+}
+
+.addaddress-box1-details-div1 {
+  width: 54%;
+  height: 80px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin: 5px 0px 0px 88px;
+  gap: 5px;
+}
+
+.addaddress-container-div2 {
+  width: 80%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  /* display: flex; */
+  border-radius: 10px;
+}
+
+.addaddress-box1-div{
+  width: 100%;
+   height: 40%;
+    display: flex;
+}
+
+.addaddress-box1-details-div1-ip {
+  width: 98%;
+  height: 30px;
+  border-radius: 6px;
+  /* border: none; */
+}
+
+.addaddress-box1-div-box {
+  width: 43%;
+  height: 143px;
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.addaddress-box1-details-name{
+
+  margin:0px;
+  margin-left: -46px;
+
+}
+
+.addaddress-img-div-del-Icon{
+  width: 20%;
+  height: 100%;
+  margin: 20px 0px 0px 196px;
+  /* border: 1px solid yellow; */
+}
+.addaddress-container-heading-name{
+  margin-left: 15px;
+    font-size: 21px;
+}
+
+address-box1-details-div1 {
+  width: 54%;
+  height: 80px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin: 5px 0px 0px 121px;
+  gap: 5px;
+}
+/* k.................................................. */
+
+
+}

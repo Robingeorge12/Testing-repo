@@ -1,0 +1,38 @@
+.fabric-container{
+width:100vw;
+height: 50vh;
+/* border: 1px solid red; */
+}
+.fabric-slide-div{
+    width:300px;
+    height:280px;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+}
+
+.fabric-heading{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 65px;
+}
+
+.fabric-img{
+    width:100%;
+    height: 90%;
+    /* border: 1px solid red; */
+
+}
+.fabric-img>img{
+    width:100%;
+    height: 100%;
+}
+
+.fabric-details>p{
+position: relative;
+color:white;
+font-size: 25px;
+font-weight: 700;
+top:-80px;
+text-align: left;
+}

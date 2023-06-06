@@ -1,0 +1,47 @@
+
+.css-6hp17o-MuiList-root-MuiMenu-list{
+    padding:20px !important;
+}
+
+
+.css-1ka5eyc-MuiPaper-root-MuiMenu-paper-MuiPopover-paper{
+    top:84px !important;
+    max-width: calc(20% - 32px) !important;
+    position: absolute;
+    left: 1200px;
+}
+@media screen and (max-width:434px){
+    .css-1ka5eyc-MuiPaper-root-MuiMenu-paper-MuiPopover-paper{
+        top:84px !important;
+        max-width: calc(100% - 32px) !important;
+        position: absolute;
+        /* left: 1200px; */
+    }  
+}
+
+@media screen and (max-width:768px){
+    .css-1ka5eyc-MuiPaper-root-MuiMenu-paper-MuiPopover-paper{
+        top:84px !important;
+        max-width: calc(20% - 32px) !important;
+        position: absolute;
+        /* left: 1200px; */
+    }  
+}
+
+@media screen and (max-width:1024px){
+    .css-1ka5eyc-MuiPaper-root-MuiMenu-paper-MuiPopover-paper{
+        top:84px !important;
+        max-width: calc(10% - 32px) !important;
+        position: absolute;
+        /* left: 1200px; */
+    }  
+}
+
+@media screen and (max-width:1600px){
+    .css-1ka5eyc-MuiPaper-root-MuiMenu-paper-MuiPopover-paper{
+        top:84px !important;
+        max-width: calc(10% - 32px) !important;
+        position: absolute;
+        /* left: 1200px; */
+    }  
+}

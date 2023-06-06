@@ -1,0 +1,769 @@
+.mywish-container {
+  width: 100vw;
+  height: 90vh;
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: 15px;
+}
+
+.mywish-container-div1 {
+  width: 30%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+  /* display:flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin: auto; */
+}
+
+.mywish-name-box {
+  width: 80%;
+  height: 90px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  border-radius: 8px;
+}
+
+.mywish-name-box1 {
+  width: 35%;
+  height: 98%;
+  /* border: 1px solid rgb(0, 0, 0); */
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mywish-name-box1 > div {
+  width: 80%;
+  height: 90%;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mywish-name-box1 > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+.mywish-name-box2 {
+  width: 60%;
+  height: 98%;
+  /* border: 1px solid rgb(0, 0, 0); */
+  /* background-color: rgb(51, 255, 0); */
+  text-align: left;
+}
+
+.mywish-icon-box {
+  width: 80%;
+  height: 20px;
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  border-radius: 8px;
+}
+
+.mywish-name-icon {
+  width: 8%;
+  height: 90%;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.mywish-name-text {
+  width: 70%;
+  height: 90%;
+  /* border: 1px solid rgb(208, 19, 19); */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.mywish-text2 {
+  width: 80%;
+  height: 23px;
+  /* border:1px solid grey; */
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+}
+
+.horizotal-line1 {
+  width: 80%;
+  border: 1px solid grey;
+  margin: auto;
+  margin-top: 5px;
+  display: flex;
+  /* border-radius: 8px; */
+}
+
+.mywish-button-info {
+  width: 80%;
+  height: 20px;
+  /* border:1px solid grey; */
+  margin: auto;
+  margin-top: 5px;
+  display: flex;
+}
+.mywish-button-info > button {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+  background-color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.mywish-address-text {
+  width: 80%;
+  height: 20px;
+  /* border:1px solid grey; */
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mywish-size-text {
+  width: 80%;
+  height: 20px;
+  /* border:1px solid grey; */
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.horizotal-line2 {
+  width: 80%;
+  border: 1px solid grey;
+  margin: auto;
+  margin-top: 5px;
+  display: flex;
+  /* border-radius: 8px; */
+}
+
+.mywish-card-opton1 {
+  width: 80%;
+  height: 20px;
+  /* border:1px solid grey; */
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* second section ...................................*/
+
+.mywish-card-opton2 {
+  width: 80%;
+  height: 20px;
+  /* border: 1px solid grey; */
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mywish-card-opton3 {
+  width: 80%;
+  height: 20px;
+  border: 1px solid grey;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mywish-container-div2 {
+  width: 68%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  /* display: flex; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mywish-container-div2-box1 {
+  width: 95%;
+  height: 84%;
+  margin: auto;
+  display: flex;
+  /* border: 1px solid rgb(45, 0, 128); */
+  border-radius: 10px;
+  margin-top: 20px;
+  flex-direction: column;
+
+  /* align-items: center; */
+  /* background-color: aqua; */
+}
+
+.mywish-container-div2-box1-sizebox {
+  width: auto;
+  height: 400px;
+  /* margin: auto; */
+  /* display: flex; */
+  /* border: 1px solid rgb(21, 128, 0); */
+  border-radius: 10px;
+  margin-top: 20px;
+  /* margin-left: 20px; */
+}
+
+/* left box */
+
+.mywish-box1 {
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid grey; */
+  display: flex;
+  gap: 20px;
+  /* background-color: aqua; */
+  /* padding:0px 0px 50px 10px; */
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* second section right box.................................... */
+
+.mywish-img-bottom {
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: right;
+  /* text-align: right; */
+}
+
+.mywish-img-bottom1 {
+  width: 50px;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+}
+
+/* .mywish-img-bottom3>img{ */
+/* width:40px;
+      height: 100%; */
+/* border: 1px solid black; */
+
+/* } */
+
+.mywish-personal-div {
+  width: 90%;
+  height: 350px;
+  /* border: 3px solid yellow; */
+  box-sizing: border-box;
+  margin: 0px;
+  /* margin-top: -50px; */
+}
+
+.mywish-personal-add {
+  width: 100%;
+  height: 10%;
+  border: 1px solid grey;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.mywish-main-div {
+  width: 100%;
+  height: 390px;
+  border: 1px solid grey;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  /* background-color: aqua; */
+  /* flex-shrink: 0; */
+  justify-content: left;
+  border-radius: 8px;
+  padding: 0px 0px 30px 0px;
+}
+
+.mywish-details-container {
+  width: 100%;
+  height: 280px;
+  /* border:1px solid blue; */
+  /* margin-left: 10px; */
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  box-sizing: border-box;
+  margin-top: 15px;
+  /* flex-shrink: 1; */
+}
+
+.mywish-details-container-box1 {
+  width: 27%;
+  height: 100%;
+  /* border: 2px solid rgb(230, 7, 7); */
+  gap: 10px;
+}
+
+.mywish-details-container-box2 {
+  width: 30%;
+  height: 100%;
+  /* border: 2px solid rgb(230, 7, 7); */
+}
+
+.mywish-details-container-box3 {
+  width: 30%;
+  height: 100%;
+  /* border: 2px solid rgb(230, 7, 7); */
+}
+
+.mywish-container-div2-box2 {
+  width: 95%;
+  height: 250px;
+  overflow: hidden;
+  /* margin: auto; */
+  /* display: flex; */
+  /* border: 1px solid rgb(128, 0, 102); */
+}
+.mywish-faq1,
+.mywish-faq2,
+.mywish-faq3,
+.mywish-faq4 {
+  align-items: start;
+  text-align: left;
+  margin-bottom: 10px;
+}
+#b1 {
+  margin-top: 20px;
+}
+
+#b2,
+#b3,
+#b4 {
+  margin-top: 18px;
+}
+
+div.mywish-size-text:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+}
+div.mywish-address-text:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+}
+div.mywish-card-opton1:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+}
+/* div.mywish-button-info:hover{
+  background-color:black;
+  color:white;
+  border-radius: 5px;
+  height: 30px;
+} */
+
+.mywish-button-info > button:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.mywish-box1-div {
+  width: 80%;
+  height: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: left;
+  /* align-items: center; */
+}
+.mywish-box1-icon1{
+  display: none;
+  width: 10%;
+  height: 100%;
+}
+.mywish-box1-icon2{
+
+  display: none;
+  width: 10%;
+  height: 100%;
+  margin-top: 10px;
+
+}
+@media screen and (max-width: 1440px){
+
+  .mywish-box1-icon1 {
+    display: none;
+    width: 35%;
+    height: 120px;
+    /* border: 1px solid red; */
+    justify-content: end;
+    align-items: center;
+}
+
+
+  .mywish-box1-icon2{
+  
+    
+    display: flex;
+    width: 10%;
+    height: 100%;
+    margin-top: 10px;
+  
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1024px){
+
+  .mywish-box1-icon1 {
+    display: none;
+    width: 35%;
+    height: 120px;
+    /* border: 1px solid red; */
+    justify-content: end;
+    align-items: center;
+}
+
+
+  .mywish-box1-icon2{
+  
+    
+    display: flex;
+    width: 10%;
+    height: 100%;
+    margin-top: 10px;
+  
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .mywish-container {
+    width: 100vw;
+    height: auto;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .mywish-container-div1 {
+    width: 80%;
+    height: 40%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+
+  .mywish-container-div2 {
+    width: 80%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* display: flex; */
+    border-radius: 10px;
+    /* overflow: hidden; */
+    margin-bottom: 10px;
+  }
+
+  .horizotal-line1 {
+    display: none;
+  }
+  .mywish-button-info {
+    display: none;
+  }
+
+  .mywish-address-text {
+    display: none;
+  }
+
+  .mywish-size-text {
+    display: none;
+  }
+
+  .mywish-text2 {
+    display: none;
+  }
+
+  .horizotal-line2 {
+    display: none;
+  }
+
+  .mywish-card-opton1 {
+    display: none;
+  }
+
+  .mywish-text2 {
+    display: none;
+  }
+
+  .mywish-container-div2 {
+    width: 80%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* display: flex; */
+    border-radius: 10px;
+    /* overflow: hidden; */
+  }
+
+  .mywish-box1 {
+    width: 80%;
+    height: auto;
+    border: 1px solid grey;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* background-color: aqua; */
+    /* padding: 0px 0px 50px 10px; */
+    border-radius: 10px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+  }
+
+  .mywish-container-div2-box1-sizebox {
+    width: auto;
+    height: auto;
+    /* display: flex; */
+    /* border: 1px solid rgb(21, 128, 0); */
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .mywish-box1 {
+    width: 100%;
+    height: auto;
+    border: 1px solid grey;
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px;
+    flex-direction: column;
+    /* background-color: aqua; */
+    /* padding: 0px 0px 50px 10px; */
+    border-radius: 10px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+  .mywish-box1-div {
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: left;
+    /* align-items: center; */
+  }
+
+  .mywish-box1-card1 {
+    width: 90%;
+    height: 200px;
+    /* border: 1px solid red; */
+    /* margin-top: 5px; */
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 20px; */
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .mywish-box1-icon1 {
+    display: flex;
+    width: 35%;
+    height: 120px;
+    /* border: 1px solid red; */
+    justify-content: end;
+    align-items: center;
+}
+.mywish-box1-icon1-style{
+height: 20%;
+height: 28px;
+width: 28px;
+}
+
+  .mywish-box1-icon2{
+  
+    display: none;
+    width: 10%;
+    height: 100%;
+    margin-top: 10px;
+  
+  }
+
+  .mywish-box1-card1-sbi {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .savedcards-box1-card2-sbi {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .savedcards-box1-card1-div2 {
+    width: 66px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    top: -179px;
+    left: 20px;
+  }
+
+  .savedcards-box1-card1-im1 {
+    position: relative;
+    top: -215px;
+    left: -149px;
+    width: 46px;
+    height: 30px;
+  }
+  .savedcards-box1-card1-div3 {
+    width: 60px;
+    height: 32px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    top: -137px;
+    left: 329px;
+  }
+  .savedcards-box1-card1-im2 {
+    position: relative;
+    top: -168px;
+    left: 263px;
+    width: 40px;
+    height: 30px;
+  }
+
+  .savedcards-box1-card1-im3 {
+    position: relative;
+    top: -206px;
+    left: -9px;
+    width: 211px;
+    height: 30px;
+  }
+  .savedcards-box1-card1-icon {
+    width: 61%;
+    height: 30px;
+  }
+
+  .savedcards-box1-card1-div4 {
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+  }
+
+  .savedcards-box1-card2 {
+    width: 90%;
+    height: 200px;
+    /* border: 1px solid blue; */
+    /* margin-top: 5px; */
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 20px; */
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .savedcards-box1-card2-div2 {
+    width: 66px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    top: -179px;
+    left: 20px;
+  }
+
+  .savedcards-box1-card2-im1 {
+    position: relative;
+    top: -215px;
+    left: -149px;
+    width: 46px;
+    height: 30px;
+  }
+  .savedcards-box1-card2-div3 {
+    width: 60px;
+    height: 32px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    top: -137px;
+    left: 329px;
+  }
+  .savedcards-box1-card2-im2 {
+    position: relative;
+    top: -168px;
+    left: 263px;
+    width: 40px;
+    height: 30px;
+  }
+
+  .savedcards-box1-card2-im3 {
+    position: relative;
+    top: -206px;
+    left: -9px;
+    width: 211px;
+    height: 30px;
+  }
+
+  .savedcards-box1-card2-div4 {
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+  }
+
+  .savedcards-container-div2-box2 {
+    width: 95%;
+    height: 250px;
+    overflow: hidden;
+    margin: auto;
+    /* display: flex; */
+    /* border: 1px solid rgb(128, 0, 102); */
+  }
+}
