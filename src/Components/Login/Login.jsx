@@ -65,14 +65,10 @@ function Login() {
           <div className="login-form-box">
             <div className="login-form-inner-box">
               <div
-                style={{
-                  textAlign: "left",
-                  fontSize: "25px",
-                  margin: "0px",
-                  padding: "0px",
-                }}
+              className="login-form-inner-box-head-div"
+           
               >
-                <h3 style={{ margin: "0px", padding: "0px 0px 20px 0px" }}>
+                <h3 className="login-form-inner-box-head-h4" >
                   Login
                 </h3>
               </div>
@@ -91,30 +87,18 @@ function Login() {
               </div>
 
               <div
-                style={{
-                  fontSize: "12px",
-                  display: "flex",
-                  alignItems: "center",
-                  width: "100%",
-                  height: "40px",
-                  textAlign: "left",
-                }}
+              className="login-input-box-details"
+             
               >
                 <Link to="" style={{ textDecoration: "none" }}>
                   <p style={{ color: "grey" }}>Forgot Password?</p>
                 </Link>
-                <h4>Reset Now</h4>
+                <h4 style={{marginTop:"15px"}}>Reset Now</h4>
               </div>
 
               <div
-                style={{
-                  fontSize: "18px",
-                  display: "flex",
-                  alignItems: "center",
-                  width: "100%",
-                  height: "40px",
-                  textAlign: "left",
-                }}
+                   className="login-input-box-details-div1"
+            
               >
                 <p style={{ fontSize: "12px" }}>
                   By continuing,I agree to the,
@@ -127,43 +111,33 @@ function Login() {
               <div style={{ textAlign: "center" }}>
                 <button
                   onClick={handleSubmit}
-                  style={{
-                    backgroundColor: "grey",
-                    width: "100%",
-                    height: "40px",
-                    border: "none",
-                    borderRadius: "5px",
-                    color: "white",
-                  }}
+                  className="login-input-box-details-div2"
+                
                 >
                   SUBMIT
                 </button>
               </div>
 
               <div
-                style={{ display: "flex", alignItems: "center", gap: "5px" }}
+               className="login-input-box-details-div3"
+                
               >
                 <p style={{ fontSize: "12px" }}>Or</p>
                 <h3 style={{ fontSize: "12px" }}>Continue with:</h3>
               </div>
 
               <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "5px",
-                  width: "100%",
-                  height: "30px",
-                  justifyContent: "space-between",
-                }}
+              className="login-input-box-details-div4"
+           
               >
                 <button
-                  style={{ width: "45%", height: "100%", borderRadius: "5px" }}
+                 className="login-input-box-details-btn1"
+                  
                 >
                   <FaFacebookF />
                 </button>
                 <button
-                  style={{ width: "45%", height: "100%", borderRadius: "5px" }}
+                 className="login-input-box-details-btn1"
                 >
                   <AiOutlineGoogle />
                 </button>
@@ -171,18 +145,13 @@ function Login() {
 
               <div style={{ fontSize: "12px", textAlign: "left" }}>
                 <Link to="" style={{ textDecoration: "none", color: "black" }}>
-                  <h3>SIGNIN WITH OTP</h3>
+                  <h3 style={{fontSize:"15px"}}>SIGNIN WITH OTP</h3>
                 </Link>
               </div>
 
               <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "5px",
-                  position: "absolute",
-                  bottom: "0px",
-                }}
+              className="login-input-box-details-lastdiv"
+              
               >
                 <p style={{ fontSize: "12px" }}>Have trouble loging in?</p>
                 <h1 style={{ fontSize: "12px" }}>Get help</h1>

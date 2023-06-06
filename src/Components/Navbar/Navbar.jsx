@@ -56,6 +56,10 @@ function Navbar() {
     navigate("/login");
   };
 
+  const handleHome = () =>{
+    navigate("/");
+  }
+
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -65,8 +69,8 @@ const [menubar,setMenubar] = useState(false)
 
   return (
     <div className="navbar-container">
-      <div className="navbar-icon-box">
-        <img src={logo} alt="pic" />
+      <div className="navbar-icon-box" onClick={handleHome}>
+        <img src={logo} alt="pic"  onClick={handleHome} />
       </div>
       <div className="navbar-pages-box">
         <Link

@@ -1,8 +1,8 @@
 .login-container{
 
-    width:100vw;
+    width:98vw;
     height: 100vh;
-    /* border:2px solid red; */
+    border:2px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +12,7 @@
 .login-image-container{
     width:90%;
     height: 90%;
-    /* border:2px solid rgb(0, 42, 255); */
+    border:2px solid rgb(0, 42, 255);
     box-sizing: border-box;
 
 }
@@ -112,7 +112,7 @@ left:1150px;
 
 .login-form-box{
     width: 350px;
-    height: 500px;
+    height: 463px;
     position: relative;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     margin: auto;
@@ -144,4 +144,164 @@ left:1150px;
     background-color: aliceblue;
 
     /* gap:40px;  */
+}
+
+
+/* {//////////./...................................} */
+
+.login-form-inner-box-head-div{
+    text-align: left;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+.login-form-inner-box-head-h4{
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+}
+.login-input-box-details{
+
+    font-size:12px;
+    display: flex;
+    align-items: center;
+    width:100%;
+    height:40px;
+    text-align: left;
+}
+.login-input-box-details-div1{
+
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+}
+
+.login-input-box-details-div2{
+
+    font-size: 18px;
+   background-color: grey;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+}
+.login-input-box-details-div3{
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.login-input-box-details-div4{
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+}
+.login-input-box-details-btn1{
+
+    width: 45%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+.login-input-box-details-lastdiv{
+
+    display: flex;
+    align-items: center;
+    gap:5px;
+    position:absolute;
+    bottom: 0px;
+}
+
+
+@media screen and (max-width:1440px){
+
+    .login-m8 {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 625px;
+        top: -24px;
+    }
+
+    .login-form-box {
+        width: 350px;
+        height: 463x;
+        position: relative;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        margin: auto;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 10px;
+        top: -67px;
+    }
+
+    .login-m5 {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 40px;
+        left: 458px;
+        /* background-color: blue; */
+    }
+    .login-m7 {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 789px;
+        top: -20px;
+        transform: rotate(23deg);
+        /* background-color: pink; */
+    }
+
+}
+
+@media screen and (max-width:1024px){
+    
+
+    .login-m4 {
+        width: 116px;
+        height: 181px;
+        position: absolute;
+        left: 843px;
+        top: -20px;
+        /* background-color: brown; */
+        /* top: -800px; */
+    }
+
+    .login-m10 {
+        width: 178px;
+        height: 306px;
+        position: absolute;
+        top: 300px;
+        left: 817px;
+    }
+    .login-m11 {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        top: 200px;
+        left: 868px;
+    }
+    .login-m9 {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        left: 854px;
+        top: 250px;
+    }
+}
+
+@media screen and (max-width:768px){
+    
 }

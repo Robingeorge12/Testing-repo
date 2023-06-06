@@ -6,8 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Drope.css";
 import { Box, Divider, Typography } from "@mui/material";
 
-
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from "@mui/icons-material/Menu";
 
 function DropeBox() {
   const navigate = useNavigate();
@@ -23,11 +22,13 @@ function DropeBox() {
   const handleLogin = () => {
     navigate("/login");
   };
+  const handleSign = () => {
+    navigate("/signup");
+  };
 
   return (
     <div>
-
-        {/* <div><MenuIcon /></div> */}
+      {/* <div><MenuIcon /></div> */}
       <span
         id="demo-positioned-button"
         // aria-controls={open ? "demo-positioned-menu" : undefined}
@@ -36,7 +37,7 @@ function DropeBox() {
         onClick={handleClick}
       >
         Profile
-      </span >
+      </span>
       <Menu
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
@@ -63,16 +64,20 @@ function DropeBox() {
         </Box>
 
         <Button
-          onClick={handleLogin}
+          
           style={{
             color: "black",
             margin: "5px 0px",
             backgroundColor: "white",
             border: "1px solid black",
             width: "70%",
+            height:"40px"
           }}
         >
-          LOGIN/SIGNUP
+          <div style={{ display: "flex",width:"50%",height:"80%",alignItems:"center",justifyContent:"center" }}>
+            <Link to="/login"  style={{textDecoration:"none"}}>LOGIN/</Link>
+            <Link to="/signup"  style={{textDecoration:"none"}}>SIGNUP</Link>
+          </div>
         </Button>
 
         <Divider
