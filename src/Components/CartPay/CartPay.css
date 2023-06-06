@@ -1,107 +1,744 @@
-.cartpay-container{
-    width:100vw;
-    height: 90vh;
-    /* border: 2px solid red; */
-    display: flex;
-    gap:20px;
-    background-color: #EFEFEF;
-    /* padding-left:20px ; */
-    padding: 20px;
+.cartpay-container {
+  width: 100vw;
+  height: 90vh;
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 20px;
+  background-color: #efefef;
+  /* padding-left:20px ; */
+  padding: 20px;
 }
-.cartpay-div1{
-
-    width:70%;
-    height: 100%;
-    /* border: 2px solid rgb(13, 0, 255); */
-    border-radius: 10px;
-    /* display: flex; */
-    background-color:white;
+.cartpay-div1 {
+  width: 70%;
+  height: 100%;
+  /* border: 2px solid rgb(13, 0, 255); */
+  border-radius: 10px;
+  /* display: flex; */
+  background-color: white;
 }
 
-.cartpay-div1-box1{
+.cartpay-div1-box1 {
+  display: flex;
+  width: 90%;
+  height: 60px;
+  /* border: 1px solid green; */
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.cartpay-item-box1 {
+  width: 90%;
+  height: 60px;
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 20px;
+
+  margin: auto;
+  /* background-color: aqua; */
+  /* padding:0px 0px 50px 10px; */
+  border-radius: 10px;
+  align-items: center;
+  justify-content: left;
+}
+
+.cartpay-card-div {
+  width: 90%;
+  height: 182px;
+  /* border: 2px solid rgb(0, 238, 255); */
+  display: flex;
+  gap: 20px;
+
+  margin: auto;
+  /* background-color: aqua; */
+  /* padding:0px 0px 50px 10px; */
+  border-radius: 10px;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* section two */
+
+.cartpay-div2 {
+  width: 25%;
+  height: 100%;
+  /* border: 2px solid rgb(222, 12, 180); */
+  border-radius: 10px;
+  background-color: white;
+  /* display: flex; */
+}
+
+.cartpay-img-bottom {
+  /* width: 100%; */
+  height: 50px;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: right;
+  /* text-align: right; */
+  align-items: baseline;
+  position: absolute;
+  bottom: -3%;
+  left: 94%;
+}
+
+.cartpay-img-bottom1 {
+  width: 50px;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+}
+
+.cartpay-div1-box1-ipradio {
+  width: 14px;
+  height: 14px;
+  /* background-color: red; */
+}
+.cartpay-div1-box1-phonepay {
+  width: 37px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+}
+.cartpay-div1-box1-ph-ptag1 {
+  font-size: 18px;
+}
+.cartpay-div1-box1-ph-ptag2 {
+  font-size: 18px;
+}
+.cartpay-item-box1-h4-one {
+  text-align: left;
+  margin-left: 54px;
+  margin-top: 0px;
+}
+.cartpay-card-div-box2 {
+  width: 45%;
+  height: 100%;
+  /* border: 2px solid red; */
+  margin-top: 5px;
+  display: flex;
+  /* margin-left: 20px; */
+  /* justify-content:left */
+}
+.cartpay-card-div-box3 {
+  width: 10%;
+  height: 100%;
+  /* border: 1px solid green; */
+}
+.cartpay-card-div-box3-ip {
+  width: 14px;
+  height: 14px;
+  float: left;
+}
+.cartpay-card-div-box4 {
+  width: 90%;
+  height: 100%;
+  /* border: 2px solid blue; */
+}
+/* {........./...............................................} */
+.cartpay-card-div-box4-cdimg {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.cartpay-card-div-box4-btn {
+  width: 60px;
+  height: 36px;
+  border-radius: 4px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 548px;
+  left: 146px;
+  border: none;
+}
+.cartpay-card-div-box4-btn1 {
+  width: 74px;
+  height: 37px;
+  border-radius: 47px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 668px;
+  left: 419px;
+  border: none;
+}
+.cartpay-card-div-box4-sbi {
+  width: 43px;
+  height: 28px;
+}
+.cartpay-card-div-box4-vs {
+  width: 46px;
+  height: 30px;
+}
+
+.cartpay-card-div-box4-vs-im2 {
+  position: relative;
+  top: -99px;
+  left: -1px;
+  width: 259px;
+  height: 20px;
+}
+
+/* .cartpay-card-div-box4-planeline {
+  width: 45px;
+  height: 27px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -144px;
+  left: 29px;
+} */
+
+/* .cartpay-card-div-box4-sbi-plaine {
+  width: 48px;
+  height: 26px;
+  background-color: white;
+  border-radius: 13px;
+  position: relative;
+  top: -121px;
+  left: 234px;
+} */
+
+.cartpay-card-div-box5 {
+  width: 45%;
+  height: 100%;
+  /* border: 1px solid red; */
+  margin-top: 5px;
+  display: flex;
+  /* marginLeft: 20px; */
+  /* justifyContent:left */
+}
+.cartpay-card-div-box5-ipbox {
+  width: 10%;
+  height: 100%;
+  /* border: 1px solid green; */
+}
+.cartpay-card-div-box5-ip {
+  width: 14px;
+  height: 14px;
+  float: left;
+}
+.cartpay-card-div-box5-imdiv {
+  width: 90%;
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+.cartpay-card-div-box5-imdiv-im {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.cartpay-card-div-box5-planeline2 {
+  width: 45px;
+  height: 27px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -144px;
+  left: 29px;
+}
+
+/* .cartpay-card-div-box6-plain {
+  width: 48px;
+  height: 26px;
+  background-color: white;
+  border-radius: 13px;
+  position: relative;
+  top: -121px;
+  left: 234px;
+} */
+/* {..........................................................} */
+.cartpay-card-div-box5-btn1 {
+  width: 60px;
+  height: 36px;
+  border-radius: 4px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 548px;
+  left: 674px;
+  border: none;
+}
+.cartpay-card-div-box5-btn {
+  width: 74px;
+  height: 37px;
+  border-radius: 47px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  top: 668px;
+  left: 948px;
+}
+.cartpay-card-div-box6-im1 {
+  width: 43px;
+  height: 28px;
+}
+.cartpay-card-div-box6-im3 {
+  width: 46px;
+  height: 30px;
+}
+.cartpay-card-div-box6-im3-no {
+  position: relative;
+  top: -98px;
+  left: 0px;
+  width: 259px;
+  height: 20px;
+}
+
+.cartpay-card-div-box7-htl-line{
+    width: 100%;
+    height: 4px;
+    color: grey;
+    margin: 0px;
+    background-color: #8C8C8C;
+    margin-top: 35px;
+}
+
+
+
+
+.cartpay-div2-heading {
+  width: 90%;
+  height: 20px;
+  /* border: 1px solid black; */
+  margin: auto;
+  display: flex;
+  text-align: left;
+  padding-top: 10px;
+}
+.cartpay-div2-price-details {
+  width: 90%;
+  height: 330px;
+  /* border: 1px solid black; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cartpay-div2-price {
+  width: 100%;
+  height: 10%;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 14px 0px;
+}
+.cartpay-div2-discount {
+  width: 100%;
+  height: 10%;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.cartpay-div2-delivery {
+  width: 100%;
+  height: 10%;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.cartpay-div2-amount {
+  width: 100%;
+  height: 10%;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.cartpay-div2-payment {
+  width: 100%;
+  height: 40px;
+  /* border: 1px solid black; */
+  margin: auto;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 8px;
+  font-size: 20px;
+  /* gap: 10px; */
+}
+
+
+.cartpay-div1-box1-heading-first{
+  text-align: left;
+  margin-left: 54px;
+}
+
+@media screen and (max-width:1440px){
+
+  .cartpay-div1-box1 {
     display: flex;
     width: 90%;
-    height:60px;
+    height: 39px;
     /* border: 1px solid green; */
     align-items: center;
     justify-content: space-between;
     margin: auto;
 }
-
-
+.cartpay-div1-box1-heading-first {
+  text-align: left;
+  margin-left: 54px;
+  margin-bottom: 5px;
+}
 .cartpay-item-box1 {
-    width:90%;
-    height: 60px;
-    /* border: 1px solid red; */
-    display: flex;
-    gap:20px;
-    
-    margin: auto;
-    /* background-color: aqua; */
-    /* padding:0px 0px 50px 10px; */
-    border-radius: 10px;
-    align-items: center;
-    justify-content: left;
+  width: 90%;
+  height: 56px;
+}
+.cartpay-card-div {
+  width: 90%;
+  height: 174px;
+}
+.cartpay-card-div-box4-btn {
+  width: 60px;
+  height: 36px;
+  border-radius: 4px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 498px;
+  left: 127px;
+  border: none;
+}
+.cartpay-card-div-box4-btn1 {
+  width: 74px;
+  height: 37px;
+  border-radius: 47px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 605px;
+  left: 390px;
+  border: none;
+}
+.cartpay-card-div-box5-btn1 {
+  width: 60px;
+  height: 36px;
+  border-radius: 4px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 499px;
+  left: 626px;
+  border: none;
+}
+.cartpay-card-div-box5-btn {
+  width: 74px;
+  height: 37px;
+  border-radius: 47px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  top: 606px;
+  left: 889px;
+}
+.cartpay-card-div-box7-htl-line {
+  width: 100%;
+  height: 4px;
+  color: grey;
+  margin: 0px;
+  background-color: #8C8C8C;
+  margin-top: 28px;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+  .cartpay-div1 {
+    width: 65%;
+  }
+  .cartpay-div2 {
+    width: 30%;
   }
 
-.cartpay-card-div{
-    width:90%;
-    height: 250px;
-    /* border: 1px solid rgb(0, 238, 255); */
+  .cartpay-card-div {
+    width: 90%;
+    height: 132px;
+    /* border: 2px solid rgb(0, 238, 255); */
     display: flex;
-    gap:20px;
-    
+    gap: 20px;
     margin: auto;
     /* background-color: aqua; */
-    /* padding:0px 0px 50px 10px; */
+    /* padding: 0px 0px 50px 10px; */
     border-radius: 10px;
     /* align-items: center; */
-    justify-content: left; 
+    justify-content: space-between;
     margin-top: 20px;
 }
+.cartpay-card-div-box2 {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid red; */
+  margin-top: 5px;
+  display: flex;
+  /* margin-left: 20px; */
+  /* justify-content: left; */
+}
 
+.cartpay-card-div-box5 {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid red; */
+  margin-top: 5px;
+  display: flex;
+}
+.cartpay-card-div-box5 {
+  width: 48%;
+  height: 100%;
+  /* border: 1px solid red; */
+  margin-top: 5px;
+  display: flex;
+}
 
+.cartpay-card-div-box4-btn {
+    width: 57px;
+    height: 31px;
+    border-radius: 4px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 495px;
+    left: 96px;
+    border: none;
+}
 
+.cartpay-card-div-box4-vs-im2 {
+    position: relative;
+    top: -75px;
+    left: -1px;
+    width: 186px;
+    height: 20px;
+}
+.cartpay-card-div-box4-btn1 {
+  width: 60px;
+  height: 28px;
+  border-radius: 47px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 579px;
+  left: 280px;
+  border: none;
+}
+.cartpay-card-div-box5-btn1 {
+  width: 57px;
+  height: 31px;
+  border-radius: 4px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 494px;
+  left: 409px;
+  border: none;
+}
+.cartpay-card-div-box6-im3-no {
+  position: relative;
+  top: -76px;
+  left: 0px;
+  width: 186px;
+  height: 20px;
+}
+.cartpay-card-div-box5-btn {
+  width: 60px;
+  height: 28px;
+  border-radius: 47px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  top: 580px;
+  left: 582px;
+}
+.cartpay-card-div-box7-htl-line {
+  width: 100%;
+  height: 4px;
+  color: grey;
+  margin: 0px;
+  background-color: #8C8C8C;
+  margin-top: 17px;
+}
 
-
-
-
-/* section two */
-
-.cartpay-div2{
-
-    width:25%;
-    height: 100%;
-    /* border: 2px solid rgb(222, 12, 180); */
-    border-radius: 10px;
-    background-color:white;
-    /* display: flex; */
 }
 
 
-.cartpay-img-bottom {
-    /* width: 100%; */
-    height: 50px;
-    /* border: 1px solid blue; */
-    display: flex;
-    justify-content: right;
-    /* text-align: right; */
-    align-items: baseline;
-    position:absolute;
-  bottom:-3%;
-  left:94%;
 
-    
+
+
+@media screen and (max-width: 768px) {
+  .cartpay-container {
+    width: 95vw;
+    height: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 20px;
+    background-color: #efefef;
+    /* padding-left: 20px; */
+    padding: 20px;
+    flex-direction: column;
   }
-  
-  .cartpay-img-bottom1{
-      width:50px;
-      height: 100%;
-      border: 1px solid black;
-      border-radius:50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: right;
+  .cartpay-div1 {
+    width: 100%;
+    height:auto;
   }
-  
+  .cartpay-div2 {
+    width: 100%;
+    height: 100%;
+  }
+  .cartpay-card-div {
+    width: 90%;
+    height: 600px;
+    /* border: 1px solid rgb(0, 238, 255); */
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    /* margin: auto; */
+    /* background-color: aqua; */
+    /* padding: 0px 0px 50px 10px; */
+    border-radius: 10px;
+    /* align-items: center; */
+    justify-content: left;
+    /* margin-top: 20px; */
+  }
+  .cartpay-card-div-box2 {
+    width: 100%;
+    height: 45%;
+    /* border: 1px solid red; */
+    margin-top: 5px;
+    display: flex;
+    /* margin-left: 20px; */
+    /* justify-content: left; */
+  }
+  .cartpay-card-div-box5-imdiv {
+    width: 80%;
+    height: 100%;
+    float: left;
+    /* display: flex; */
+    /* border: 1px solid blue; */
+}
+  .cartpay-card-div-box4 {
+    width: 80%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    float: left;
+    display: flex;
+  }
+
+  .cartpay-card-div-box4-vs-im2 {
+    position: absolute;
+    top: 613px;
+    left: 217px;
+    width: 332px;
+    height: 49px;
+}
+.cartpay-card-div-box4-btn1 {
+  width: 88px;
+  height: 47px;
+  border-radius: 47px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 692px;
+  left: 537px;
+  border: none;
+}
+.cartpay-card-div-box4-vs {
+  width: 54px;
+  height: 30px;
+}
+.cartpay-card-div-box4-btn {
+  width: 73px;
+  height: 43px;
+  border-radius: 9px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 505px;
+  left: 146px;
+  border: none;
+}
+.cartpay-card-div-box4-sbi {
+  width: 50px;
+  height: 28px;
+}
+
+  .cartpay-card-div-box5 {
+    width: 100%;
+    height: 45%;
+    /* border: 1px solid red; */
+    margin-top: 5px;
+    display: flex;
+  }
+  .cartpay-card-div-box5-btn1 {
+    width: 73px;
+    height: 43px;
+    border-radius: 11px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 797px;
+    left: 147px;
+    border: none;
+}
+.cartpay-card-div-box6-im1 {
+  width: 50px;
+  height: 28px;
+}
+.cartpay-card-div-box5-imdiv-im {
+  width: 100%;
+  height: 270px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: flex;
+}
+
+.cartpay-card-div-box5-btn {
+  width: 88px;
+  height: 47px;
+  border-radius: 47px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  top: 989px;
+  left: 540px;
+}
+.cartpay-card-div-box6-im3-no {
+    position: relative;
+    top: -145px;
+    left: -14px;
+    width: 322px;
+    height: 49px;
+}
+}

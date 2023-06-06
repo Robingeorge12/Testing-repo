@@ -89,7 +89,7 @@ function DropeBox() {
         </Link>
 
         <Link
-          to="/wishlist"
+          to="/mywish"
           onClose={handleClose}
           style={{ textDecoration: "none", color: "black" }}
         >

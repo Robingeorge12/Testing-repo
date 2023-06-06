@@ -54,6 +54,10 @@ function OrderPage() {
     navigate("/rating");
   };
 
+const handleTrack = ()=>{
+  navigate("/trackpage");
+}
+
   return (
     <div className="orderpage-container">
       <div className="orderpage-container-div1">
@@ -91,7 +95,16 @@ function OrderPage() {
         </div>
         <div className="horizotal-line1"></div>
         <div className="orderpage-button-info" onClick={handleProfile}>
-          <button>Profile Information</button>
+        <p
+            style={{
+              fontWeight: "400",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "left",
+            }}
+          >
+            Profile Information
+          </p>
         </div>
 
         <div className="orderpage-address-text" onClick={handlemanage}>
@@ -261,7 +274,7 @@ function OrderPage() {
             </div>
           </div>
 
-          <div className="orderpage-container-div2-box1-div1-item-div">
+          <div className="orderpage-container-div2-box1-div1-item-div" onClick={handleTrack}>
             <div className="orderpage-container-div2-box1-div1-item-div-box1">
               <img
                 src={log}
@@ -305,7 +318,7 @@ function OrderPage() {
             </div>
           </div>
 
-          <div className="orderpage-container-div2-box1-div1-item-div">
+          <div className="orderpage-container-div2-box1-div1-item-div" onClick={handleTrack}>
             <div className="orderpage-container-div2-box1-div1-item-div-box1">
               <img
                 src={log}
@@ -354,7 +367,7 @@ function OrderPage() {
 
 
 
-          <div className="orderpage-container-div2-box1-div1-item-div">
+          <div className="orderpage-container-div2-box1-div1-item-div" onClick={handleTrack}>
             <div className="orderpage-container-div2-box1-div1-item-div-box1">
               <img
                 src={log}

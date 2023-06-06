@@ -11,13 +11,16 @@ import { BiCurrentLocation } from "react-icons/bi";
 import { RiDeleteBin5Line, RiShirtLine } from "react-icons/ri";
 import { MdOutlineEdit } from "react-icons/md";
 import { GiArmoredPants } from "react-icons/gi";
-import { AiOutlineRight, AiOutlineSearch,AiOutlineClose } from "react-icons/ai";
+import {
+  AiOutlineRight,
+  AiOutlineSearch,
+  AiOutlineClose,
+} from "react-icons/ai";
 import { FaRegThumbsDown, FaRegThumbsUp } from "react-icons/fa";
 import { Box, Button, Modal, Typography } from "@mui/material";
 
-
-import { LocalizationProvider } from '@mui/x-date-pickers';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DatePicker } from "@mui/x-date-pickers";
 
 const style2 = {
@@ -26,7 +29,7 @@ const style2 = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "400px",
-  height:"400px",
+  height: "400px",
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -38,71 +41,64 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: '450px',
-  height:'450px',
+  width: "450px",
+  height: "450px",
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
 };
 
-
-function ScheduleAppoinment({children}) {
-
+function ScheduleAppoinment({ children }) {
   const navigate = useNavigate();
 
+  const handleOrder = () => {
+    navigate("/order");
+  };
 
-  const handleOrder = ()=>{
-    navigate("/order")
-    }
+  const handleProfile = () => {
+    navigate("/profile");
+  };
 
+  const handlemanage = () => {
+    navigate("/manageadd");
+  };
 
-    const handleProfile = ()=>{
-      navigate("/profile")
-      }
-  
-const handlemanage = ()=>{
-navigate("/manageadd")
-}
+  const handleSize = () => {
+    navigate("/mysize");
+  };
 
-const handleSize = ()=>{
-  navigate("/mysize")
-  }
-  
-  const handleUpi = ()=>{
-    navigate("/paymentpage")
-  }
+  const handleUpi = () => {
+    navigate("/paymentpage");
+  };
 
-  const handleCard = ()=>{
-    navigate("/saved")
-  }
+  const handleCard = () => {
+    navigate("/saved");
+  };
 
-  
-  const handleWish = ()=>{
-    navigate("/mywish")
-  }
+  const handleWish = () => {
+    navigate("/mywish");
+  };
 
-  const handleNote = ()=>{
-    navigate("/notification")
-  }
-  const handleRate = ()=>{
-    navigate("/rating")
-  }
+  const handleNote = () => {
+    navigate("/notification");
+  };
+  const handleRate = () => {
+    navigate("/rating");
+  };
 
-const handleBook = ()=>{
-  navigate("/appoint")
-}
-
+  const handleBook = () => {
+    navigate("/appoint");
+  };
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  
   const [open2, setOpen2] = React.useState(false);
   const handleOpen2 = () => setOpen2(true);
   const handleClose2 = () => setOpen2(false);
-console.log(open2)
+  console.log(open2);
 
   return (
     <div className="sheduleappointment-container">
@@ -141,7 +137,16 @@ console.log(open2)
         </div>
         <div className="horizotal-line1"></div>
         <div className="sheduleappointment-button-info" onClick={handleProfile}>
-          <button>Profile Information</button>
+        <p
+            style={{
+              fontWeight: "400",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "left",
+            }}
+          >
+            Profile Information
+          </p>
         </div>
 
         <div className="sheduleappointment-address-text" onClick={handlemanage}>
@@ -158,7 +163,7 @@ console.log(open2)
         </div>
 
         <div className="sheduleappointment-size-text" onClick={handleSize}>
-          <p style={{ fontWeight: "400" }}>My Sizes</p>
+          <p style={{ fontWeight: "00" }}>My Sizes</p>
         </div>
 
         <div className="sheduleappointment-text2">
@@ -284,33 +289,13 @@ console.log(open2)
 
       <div className="sheduleappointment-container-div2">
         <div className="sheduleappointment-container-div2-box1">
-          <div style={{ display: "flex", justifyContent: "left" }}>
+          <div className="sheduleappointment-container-div2-box1-heading">
             <h4 style={{ color: "#999999" }}>My Size/</h4>
             <h4>Add New Size</h4>
           </div>
 
-          <div
-            style={{
-              display: "flex",
-              width: "80%",
-              height: "40px",
-              //   border: "1px solid red",
-              borderRadius: "6px",
-              marginLeft: "20px",
-              // backgroundColor: "black",
-            }}
-          >
-            <div
-              style={{
-                width: "5%",
-                height: "100%",
-                backgroundColor: "#E8E8E8",
-                borderRadius: "4px 0px 0px 4px",
-                display: "flex",
-                justifyContent: "left",
-                alignItems: "center",
-              }}
-            >
+          <div className="sheduleappointment-container-div2-box1-ip-div">
+            <div className="sheduleappointment-container-div2-box1-ip-div-one">
               {" "}
               <AiOutlineSearch
                 style={{ width: "80%", height: "80%", color: "white" }}
@@ -318,56 +303,26 @@ console.log(open2)
             </div>
 
             <input
-              style={{
-                fontSize: "16px",
-                fontWeight: "400",
-                color: "white",
-                width: "90%",
-                height: "97%",
-                backgroundColor: "#E8E8E8",
-                border: "none",
-                borderRadius: "0px 6px 6px 0px",
-              }}
+              className="sheduleappointment-container-div2-box1-iptag"
               placeholder="Formal Shirts"
             />
           </div>
 
           <div className="sheduleappointment-container-div2-box1-sizebox">
             <div className="sheduleappointment-box1">
-              <div style={{ width: "100%", height: "40%", display: "flex" }}>
-                <div
-                  style={{
-                    width: "75%",
-                    height: "100%",
-                    // border: "1px solid yellow",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "50%",
-                      height: "80%",
-                      border: "1px solid black",
-                      borderRadius: "50%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
+              <div className="sheduleappointment-box1-div1">
+                <div className="sheduleappointment-box1-div1-div1">
+                  <div className="sheduleappointment-box1-div1-div2">
                     {" "}
-                    <img src={dum} alt="pic" />
+                    <img
+                      className="sheduleappointment-box1-div1-div2-img"
+                      src={dum}
+                      alt="pic"
+                    />
                   </div>
                 </div>
 
-                <div
-                  style={{
-                    width: "20%",
-                    height: "100%",
-                    // border: "1px solid yellow",
-                  }}
-                >
+                <div className="sheduleappointment-box1-div1-div2-del">
                   <RiDeleteBin5Line
                     style={{
                       width: "30%",
@@ -378,69 +333,26 @@ console.log(open2)
               </div>
 
               <div className="sheduleappointment-box1-details">
-                <div>
-                  <h4 style={{ margin: "0px", marginLeft: "-90px" }}>
+                <div className="sheduleappointment-box1-details-name">
+                  <h4 className="sheduleappointment-box1-details-name-h4">
                     {"Manju"}
                   </h4>
                 </div>
 
-                <div
-                  style={{
-                    width: "30%",
-                    height: "50px",
-                    // border: "1px solid red",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexDirection: "column",
-                    margin: "auto",
-                    margin: "5px 0px 0px 80px",
-                    gap: "5px",
-                  }}
-                >
+                <div className="sheduleappointment-box1-details-size">
                   <input
                     type="text"
                     style={{ width: "100%", height: "25px", border: "none" }}
                     placeholder="Type Name here ..."
                   />
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "22px",
-                      display: "flex",
-                      backgroundColor: "#E8E8E8",
-                      borderRadius: "6px",
-                    }}
-                  >
-                    <div
-                      className="sheduleappointment-input-button1"
-                      style={{
-                        width: "33%",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        height: "100%",
-                        borderRadius: "6px",
-                        backgroundColor: "black",
-                      }}
-                    >
+                  <div className="sheduleappointment-box1-details-div1">
+                    <div className="sheduleappointment-input-button1">
                       {" "}
                       <p style={{ fontSize: "11px", color: "white" }}>
                         cm
                       </p>{" "}
                     </div>
-                    <div
-                      className="sheduleappointment-input-button2"
-                      style={{
-                        width: "33%",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        height: "100%",
-                        borderRadius: "6px",
-                        backgroundColor: "#E8E8E8",
-                      }}
-                    >
+                    <div className="sheduleappointment-input-button2">
                       {" "}
                       <p style={{ fontSize: "11px", color: "white" }}>meters</p>
                     </div>
@@ -1156,6 +1068,7 @@ console.log(open2)
                   <div>
                     {" "}
                     <button
+                      // onClick={handleAppoint}
                       style={{
                         color: "white",
                         fontSize: "20px",
@@ -1220,7 +1133,7 @@ console.log(open2)
                   </video>
                 </div>
 
-                <div style={{ display: "flex", gap: "10px", marginTop: "5px" }}>
+                <div className="sheduleappointment-video-botton-text">
                   <h5>Learn to measure sizes from here</h5>
                   <button
                     style={{
@@ -1234,40 +1147,49 @@ console.log(open2)
                   </button>
 
                   {open2 && (
-                  <>
-                    <Modal
-                      open={open2}
-                      onClose={handleClose2}
-                      aria-labelledby="modal-modal-title"
-                      aria-describedby="modal-modal-description"
-                    >
-                      <Box sx={style}>
-                        <Box style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
-                          {" "}
-                          <Typography
-                            id="modal-modal-title"
-                            variant="h6"
-                            component="h2"
+                    <>
+                      <Modal
+                        open={open2}
+                        onClose={handleClose2}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                      >
+                        <Box sx={style}>
+                          <Box
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "space-between",
+                            }}
                           >
-                            Shirt Measurement
-                          </Typography>
-                          <AiOutlineClose />
+                            {" "}
+                            <Typography
+                              id="modal-modal-title"
+                              variant="h6"
+                              component="h2"
+                            >
+                              Shirt Measurement
+                            </Typography>
+                            <AiOutlineClose />
+                          </Box>
+
+                          <Box
+                            style={{
+                              width: "300px",
+                              height: "300px",
+                              margin: "auto",
+                            }}
+                          >
+                            <img
+                              style={{ width: "100%", height: "100%" }}
+                              src={sh}
+                              alt="im"
+                            />
+                          </Box>
                         </Box>
-
-                        <Box style={{ width: "300px", height: "300px",margin:"auto" }}>
-                          
-<img style={{width:"100%",height:"100%"}} src={sh} alt="im" />
-
-                        </Box>
-
-              
-     
-                      </Box>
-                    </Modal>
-                  </>
-                )}
-
-
+                      </Modal>
+                    </>
+                  )}
                 </div>
 
                 <div style={{ display: "flex", gap: "8px" }}>
@@ -1321,7 +1243,13 @@ console.log(open2)
                       aria-describedby="modal-modal-description"
                     >
                       <Box sx={style2}>
-                        <Box style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+                        <Box
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                          }}
+                        >
                           {" "}
                           <Typography
                             id="modal-modal-title"
@@ -1343,11 +1271,10 @@ console.log(open2)
                               //   border: "1px solid red",
                             }}
                           >
-
-<LocalizationProvider dateAdapter={AdapterDayjs}>
-<DatePicker />
-{/* <Box style={{border:"none",backgroundColor:"blue",width:"200px",height:"50px"}}><DatePicker /></Box> */}
-    </LocalizationProvider>
+                            <LocalizationProvider dateAdapter={AdapterDayjs}>
+                              <DatePicker />
+                              {/* <Box style={{border:"none",backgroundColor:"blue",width:"200px",height:"50px"}}><DatePicker /></Box> */}
+                            </LocalizationProvider>
                             {/* <DatePicker /> */}
                             {/* <Box><DatePicker /></Box> */}
                             <Typography>Select time</Typography>
@@ -1502,20 +1429,21 @@ console.log(open2)
                               </Box>
                             </Box>
 
-                            <Button
-                              style={{
-                                width: "200px",
-                                height: "30px",
-                                color: "white",
-                                backgroundColor: "black",
-                                borderRadius: "3px",
-                                margin: "auto",
-                                marginTop: "10px",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                              }}
 
+                            <Button
+                           
+                             style={{
+                              backgroundColor:"black",
+                              width: "200px",
+                              height: "30px",
+                              color:"#FFFFFF",
+                              borderRadius: "3px",
+                              margin: "auto",
+                              marginTop: "10px",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }} 
                               onClick={handleBook}
                             >
                               BOOK APPOINTMENT

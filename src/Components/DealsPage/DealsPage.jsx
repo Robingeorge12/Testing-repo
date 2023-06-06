@@ -52,16 +52,40 @@ function DealsPage() {
         <h3 style={{ textAlign: "left",marginLeft:"65px" }}>DEALS OF THE DAY</h3>
         <Swiper
           spaceBetween={10}
-          slidesPerView={3}
+          slidesPerView={4}
+          className="deals-swiper-parent"
+     
+          breakpoints={{
+            // when window width is >= 640px
+            768: {
+              maxWidth:768,
+              slidesPerView: 1,
+            },
+            // when window width is >= 768px
+            1024: {
+              maxWidth: 1024,
+              slidesPerView: 2,
+            },
+            1440: {
+              maxWidth: 1440,
+              slidesPerView: 3,
+            },
+            
+          
+            
+            
+          }}
           // onSlideChange={() => console.log("slide change")}
           // onSwiper={(swiper) => console.log(swiper)}
         >
           {/* <SwiperSlide> */}
           {data?.map((el, i) => (
-            <SwiperSlide key={i} style={{marginLeft:"65px"}}>
+            <SwiperSlide key={i} 
+            className="deals-swiper-parent-children"
+            >
               <div className="deals">
                 <div className="deals-img-div">
-                  <img className="deals-img" style={{borderTopLeftRadius:"10px",borderBottomLeftRadius:"10px"}} src={el.img} alt="" />
+                  <img className="deals-img" src={el.img} alt="" />
                 </div>
 
                 <div className="deals-box">

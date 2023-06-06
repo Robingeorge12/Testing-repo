@@ -15,53 +15,47 @@ import { AiOutlineRight, AiOutlineSearch } from "react-icons/ai";
 import { FaRegThumbsDown, FaRegThumbsUp } from "react-icons/fa";
 
 function Appointment() {
-
   const navigate = useNavigate();
 
+  const handleOrder = () => {
+    navigate("/order");
+  };
 
-  const handleOrder = ()=>{
-    navigate("/order")
-    }
+  const handleProfile = () => {
+    navigate("/profile");
+  };
 
+  const handlemanage = () => {
+    navigate("/manageadd");
+  };
 
-    const handleProfile = ()=>{
-      navigate("/profile")
-      }
-  
-const handlemanage = ()=>{
-navigate("/manageadd")
-}
+  const handleSize = () => {
+    navigate("/mysize");
+  };
 
-const handleSize = ()=>{
-  navigate("/mysize")
-  }
-  
-  const handleUpi = ()=>{
-    navigate("/paymentpage")
-  }
+  const handleUpi = () => {
+    navigate("/paymentpage");
+  };
 
-  const handleCard = ()=>{
-    navigate("/saved")
-  }
+  const handleCard = () => {
+    navigate("/saved");
+  };
 
-  
-  const handleWish = ()=>{
-    navigate("/mywish")
-  }
+  const handleWish = () => {
+    navigate("/mywish");
+  };
 
-  
-  const handleRate = ()=>{
-    navigate("/rating")
-  }
+  const handleRate = () => {
+    navigate("/rating");
+  };
 
+  const handleNote = () => {
+    navigate("/notification");
+  };
 
-  const handleNote = ()=>{
-    navigate("/notification")
-  }
-
-const handlenewSize = ()=>{
-  navigate("/scheduleappoint")
-}
+  const handlenewSize = () => {
+    navigate("/scheduleappoint");
+  };
 
   return (
     <div className="appointment-container">
@@ -243,163 +237,57 @@ const handlenewSize = ()=>{
 
       <div className="appointment-container-div2">
         <div className="appointment-container-div2-box1">
-          <div style={{ display: "flex", justifyContent: "left" }}>
+          <div className="appointment-container-div2-box1-heading">
             <h4 style={{ color: "#999999" }}>My Size/</h4>
             <h4>Add New Size</h4>
           </div>
 
-          <div
-            style={{
-              display: "flex",
-              width: "80%",
-              height: "40px",
-              //   border: "1px solid red",
-              borderRadius: "6px",
-              marginLeft: "20px",
-              // backgroundColor: "black",
-            }}
-          >
-            <div
-              style={{
-                width: "5%",
-                height: "100%",
-                backgroundColor: "#E8E8E8",
-                borderRadius: "4px 0px 0px 4px",
-                display: "flex",
-                justifyContent: "left",
-                alignItems: "center",
-              }}
-            >
+          <div className="appointment-container-div2-box1-div1">
+            <div className="appointment-container-div2-box1-icondiv">
               {" "}
-              <AiOutlineSearch
-                style={{ width: "80%", height: "80%", color: "white" }}
-              />
+              <AiOutlineSearch className="appointment-container-div2-box1-icon" />
             </div>
 
             <input
-              style={{
-                fontSize: "16px",
-                fontWeight: "400",
-                color: "white",
-                width: "90%",
-                height: "97%",
-                backgroundColor: "#E8E8E8",
-                border: "none",
-                borderRadius: "0px 6px 6px 0px",
-              }}
+              className="appointment-container-div2-box1-ip"
               placeholder="Formal Shirts"
             />
           </div>
 
           <div className="appointment-container-div2-box1-sizebox">
             <div className="appointment-box1">
-              <div style={{ width: "100%", height: "40%", display: "flex" }}>
-                <div
-                  style={{
-                    width: "75%",
-                    height: "100%",
-                    // border: "1px solid yellow",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "50%",
-                      height: "80%",
-                      border: "1px solid black",
-                      borderRadius: "50%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
+              <div className="appointment-box1-div1">
+                <div className="appointment-box1-div2">
+                  <div className="appointment-box1-div3-img">
                     {" "}
-                    <img src={dum} alt="pic" />
+                    <img className="appointment-box1-img1" src={dum} alt="pic" />
                   </div>
                 </div>
 
-                <div
-                  style={{
-                    width: "20%",
-                    height: "100%",
-                    // border: "1px solid yellow",
-                  }}
-                >
-                  <RiDeleteBin5Line
-                    style={{
-                      width: "30%",
-                      height: "30%",
-                    }}
-                  />
+                <div className="appointment-box1-div3-del">
+                  <RiDeleteBin5Line className="appointment-box1-div3-del-icon" />
                 </div>
               </div>
 
               <div className="appointment-box1-details">
                 <div>
-                  <h4 style={{ margin: "0px", marginLeft: "-90px" }}>
-                    {"Manju"}
-                  </h4>
+                  <h4 className="appointment-box1-details-name">{"Manju"}</h4>
                 </div>
 
-                <div
-                  style={{
-                    width: "30%",
-                    height: "50px",
-                    // border: "1px solid red",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexDirection: "column",
-                    margin: "auto",
-                    margin: "5px 0px 0px 80px",
-                    gap: "5px",
-                  }}
-                >
+                <div className="appointment-box1-details-ip-div">
                   <input
                     type="text"
-                    style={{ width: "100%", height: "25px", border: "none" }}
+                    className="appointment-box1-details-ip"
                     placeholder="Type Name here ..."
                   />
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "22px",
-                      display: "flex",
-                      backgroundColor: "#E8E8E8",
-                      borderRadius: "6px",
-                    }}
-                  >
-                    <div
-                      className="appointment-input-button1"
-                      style={{
-                        width: "33%",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        height: "100%",
-                        borderRadius: "6px",
-                        backgroundColor: "black",
-                      }}
-                    >
+                  <div className="appointment-box1-details-measure-div">
+                    <div className="appointment-input-button1">
                       {" "}
                       <p style={{ fontSize: "11px", color: "white" }}>
                         cm
                       </p>{" "}
                     </div>
-                    <div
-                      className="appointment-input-button2"
-                      style={{
-                        width: "33%",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        height: "100%",
-                        borderRadius: "6px",
-                        backgroundColor: "#E8E8E8",
-                      }}
-                    >
+                    <div className="appointment-input-button2">
                       {" "}
                       <p style={{ fontSize: "11px", color: "white" }}>meters</p>
                     </div>
@@ -422,725 +310,676 @@ const handlenewSize = ()=>{
                     </div>
                   </div>
                 </div>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "left",
-                    padding: "3px 0px",
-                  }}
-                >
-                  <RiShirtLine
-                    style={{ width: "20px", height: "20px", padding: "5px" }}
-                  />
-                </div>
 
-                <div
-                  style={{
-                    justifyContent: "left",
-                    display: "flex",
-                    gap: "5px",
-                    // border: "1px solid green",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    padding: "3px 0px",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "45%",
-                      height: "100%",
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        // gap: "5px",
-                        width: "70px",
-                        height: "20px",
-                      }}
-                    >
-                      <p
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
-                        }}
-                      >
-                        Shoulder
-                      </p>
-                    </div>
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        // gap: "5px",
-                        width: "50px",
-                        height: "20px",
-                      }}
-                    >
-                      <button
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
-                        }}
-                      >
-                        1cm
-                      </button>
-                    </div>
+                <div className="appointment-details-full-box">
+                  <div className="appointment-details-list-im1">
+                    <RiShirtLine
+                      style={{ width: "20px", height: "20px", padding: "5px" }}
+                    />
                   </div>
-                  <div
-                    style={{
-                      width: "45%",
-                      height: "100%",
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        // gap: "5px",
-                        width: "110px",
-                        height: "20px",
-                      }}
-                    >
-                      <p
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
-                        }}
-                      >
-                        Back Length
-                      </p>
-                    </div>
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "50px",
-                        height: "20px",
-                      }}
-                    >
-                      <button
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
-                        }}
-                      >
-                        1cm
-                      </button>
-                    </div>
-                  </div>
-                </div>
 
-                <div
-                  style={{
-                    justifyContent: "left",
-                    display: "flex",
-                    gap: "5px",
-                    // border: "1px solid blue",
-                    alignItems: "center",
-                    height: "30px",
-                    justifyContent: "space-between",
-                    padding: "3px 0px",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "45%",
-                      height: "100%",
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "70px",
-                        height: "20px",
-                      }}
-                    >
-                      <p
+                  <div className="appointment-details-list-maindiv">
+                    <div className="appointment-details-list-maindiv-div1">
+                      <div
                         style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
+                          justifyContent: "left",
+                          display: "flex",
+                          // gap: "5px",
+                          width: "70px",
+                          height: "20px",
                         }}
                       >
-                        Chest
-                      </p>
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Shoulder
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          // gap: "5px",
+                          width: "50px",
+                          height: "20px",
+                        }}
+                      >
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          1cm
+                        </button>
+                      </div>
                     </div>
                     <div
                       style={{
-                        justifyContent: "left",
+                        width: "45%",
+                        height: "100%",
                         display: "flex",
-                        gap: "5px",
-                        width: "50px",
-                        height: "20px",
+                        justifyContent: "space-between",
                       }}
                     >
-                      <button
+                      <div
                         style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
+                          justifyContent: "left",
+                          display: "flex",
+                          // gap: "5px",
+                          width: "110px",
+                          height: "20px",
                         }}
                       >
-                        2cm
-                      </button>
-                    </div>
-                  </div>
-                  <div
-                    style={{
-                      width: "45%",
-                      height: "100%",
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "110px",
-                        height: "20px",
-                      }}
-                    >
-                      <p
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Back Length
+                        </p>
+                      </div>
+                      <div
                         style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "50px",
+                          height: "20px",
                         }}
                       >
-                        Sleeve
-                      </p>
-                    </div>
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "50px",
-                        height: "20px",
-                      }}
-                    >
-                      <button
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
-                        }}
-                      >
-                        2cm
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  style={{
-                    justifyContent: "left",
-                    display: "flex",
-                    gap: "15px",
-                    // border: "1px solid yellow",
-                    alignItems: "center",
-                    height: "30px",
-                    padding: "3px 0px",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "45%",
-                      height: "100%",
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "70px",
-                        height: "20px",
-                      }}
-                    >
-                      <p
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
-                        }}
-                      >
-                        Waist
-                      </p>
-                    </div>
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "50px",
-                        height: "20px",
-                      }}
-                    >
-                      <button
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
-                        }}
-                      >
-                        3cm
-                      </button>
-                    </div>
-                  </div>
-                  <div
-                    style={{
-                      width: "45%",
-                      height: "100%",
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "110px",
-                        height: "20px",
-                      }}
-                    >
-                      <p
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
-                        }}
-                      >
-                        Neck
-                      </p>
-                    </div>
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        // gap: "5px",
-                        width: "50px",
-                        height: "20px",
-                      }}
-                    >
-                      <button
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
-                        }}
-                      >
-                        3cm
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div style={{ display: "flex", justifyContent: "left" }}>
-                  <GiArmoredPants
-                    style={{ width: "20px", height: "20px", padding: "5px" }}
-                  />
-                </div>
-
-                <div
-                  style={{
-                    justifyContent: "left",
-                    display: "flex",
-                    gap: "5px",
-                    // border: "1px solid yellow",
-                    alignItems: "center",
-                    height: "30px",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "45%",
-                      height: "100%",
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "70px",
-                        height: "20px",
-                      }}
-                    >
-                      <p
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
-                        }}
-                      >
-                        Waist
-                      </p>
-                    </div>
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "50px",
-                        height: "20px",
-                      }}
-                    >
-                      <button
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
-                        }}
-                      >
-                        1cm
-                      </button>
-                    </div>
-                  </div>
-                  <div
-                    style={{
-                      width: "45%",
-                      height: "100%",
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "110px",
-                        height: "20px",
-                      }}
-                    >
-                      <p
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
-                        }}
-                      >
-                        Waist to Crotch
-                      </p>
-                    </div>
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "50px",
-                        height: "20px",
-                      }}
-                    >
-                      <button
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
-                        }}
-                      >
-                        1cm
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  style={{
-                    justifyContent: "left",
-                    display: "flex",
-                    gap: "5px",
-                    // border: "1px solid yellow",
-                    alignItems: "center",
-                    height: "30px",
-                    padding: "3px 0px",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "45%",
-                      height: "100%",
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        gap: "5px",
-                        width: "70px",
-                        height: "20px",
-                      }}
-                    >
-                      <p
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
-                        }}
-                      >
-                        Length
-                      </p>
-                    </div>
-                    <div
-                      style={{
-                        justifyContent: "left",
-                        display: "flex",
-                        // gap: "5px",
-                        width: "50px",
-                        height: "20px",
-                      }}
-                    >
-                      <button
-                        style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
-                        }}
-                      >
-                        2cm
-                      </button>
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          1cm
+                        </button>
+                      </div>
                     </div>
                   </div>
 
                   <div
                     style={{
-                      width: "45%",
-                      height: "100%",
+                      justifyContent: "left",
                       display: "flex",
+                      gap: "5px",
+                      // border: "1px solid blue",
+                      alignItems: "center",
+                      height: "30px",
                       justifyContent: "space-between",
+                      padding: "3px 0px",
                     }}
                   >
                     <div
                       style={{
-                        justifyContent: "left",
+                        width: "45%",
+                        height: "100%",
                         display: "flex",
-                        // gap: "5px",
-                        width: "110px",
-                        height: "20px",
+                        justifyContent: "space-between",
                       }}
                     >
-                      <p
+                      <div
                         style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "70px",
+                          height: "20px",
                         }}
                       >
-                        Upper Leg Width
-                      </p>
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Chest
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "50px",
+                          height: "20px",
+                        }}
+                      >
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          2cm
+                        </button>
+                      </div>
                     </div>
                     <div
                       style={{
-                        justifyContent: "left",
+                        width: "45%",
+                        height: "100%",
                         display: "flex",
-                        gap: "5px",
-                        width: "50px",
-                        height: "20px",
+                        justifyContent: "space-between",
                       }}
                     >
-                      <button
+                      <div
                         style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "110px",
+                          height: "20px",
                         }}
                       >
-                        2cm
-                      </button>
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Sleeve
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "50px",
+                          height: "20px",
+                        }}
+                      >
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          2cm
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div
-                  style={{
-                    justifyContent: "left",
-                    display: "flex",
-                    gap: "5px",
-                    // border: "1px solid yellow",
-                    alignItems: "center",
-                    height: "30px",
-                    justifyContent: "space-between",
-                  }}
-                >
                   <div
                     style={{
-                      width: "45%",
-                      height: "100%",
+                      justifyContent: "left",
                       display: "flex",
+                      gap: "15px",
+                      // border: "1px solid yellow",
+                      alignItems: "center",
+                      height: "30px",
+                      padding: "3px 0px",
                       justifyContent: "space-between",
                     }}
                   >
                     <div
                       style={{
-                        justifyContent: "left",
+                        width: "45%",
+                        height: "100%",
                         display: "flex",
-                        gap: "5px",
-                        width: "70px",
-                        height: "20px",
+                        justifyContent: "space-between",
                       }}
                     >
-                      <p
+                      <div
                         style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "70px",
+                          height: "20px",
                         }}
                       >
-                        Inseam
-                      </p>
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Waist
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "50px",
+                          height: "20px",
+                        }}
+                      >
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          3cm
+                        </button>
+                      </div>
                     </div>
                     <div
                       style={{
-                        justifyContent: "left",
+                        width: "45%",
+                        height: "100%",
                         display: "flex",
-                        gap: "5px",
-                        width: "50px",
-                        height: "20px",
+                        justifyContent: "space-between",
                       }}
                     >
-                      <button
+                      <div
                         style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "110px",
+                          height: "20px",
                         }}
                       >
-                        3cm
-                      </button>
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Neck
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          // gap: "5px",
+                          width: "50px",
+                          height: "20px",
+                        }}
+                      >
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          3cm
+                        </button>
+                      </div>
                     </div>
                   </div>
+
+                  <div style={{ display: "flex", justifyContent: "left" }}>
+                    <GiArmoredPants
+                      style={{ width: "20px", height: "20px", padding: "5px" }}
+                    />
+                  </div>
+
                   <div
                     style={{
-                      width: "45%",
-                      height: "100%",
+                      justifyContent: "left",
                       display: "flex",
+                      gap: "5px",
+                      // border: "1px solid yellow",
+                      alignItems: "center",
+                      height: "30px",
                       justifyContent: "space-between",
                     }}
                   >
                     <div
                       style={{
-                        justifyContent: "left",
+                        width: "45%",
+                        height: "100%",
                         display: "flex",
-                        gap: "5px",
-                        width: "110px",
-                        height: "20px",
+                        justifyContent: "space-between",
                       }}
                     >
-                      <p
+                      <div
                         style={{
-                          margin: "0px",
-                          padding: "0px",
-                          fontSize: "12px",
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "70px",
+                          height: "20px",
                         }}
                       >
-                        Lower Leg Width
-                      </p>
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Waist
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "50px",
+                          height: "20px",
+                        }}
+                      >
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          1cm
+                        </button>
+                      </div>
                     </div>
                     <div
                       style={{
-                        justifyContent: "left",
+                        width: "45%",
+                        height: "100%",
                         display: "flex",
-                        gap: "5px",
-                        width: "50px",
-                        height: "20px",
+                        justifyContent: "space-between",
                       }}
                     >
-                      <button
+                      <div
                         style={{
-                          margin: "0px",
-                          padding: "0px",
-                          color: "#ABABAB",
-                          padding: "0px 3px 0px 0px",
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "110px",
+                          height: "20px",
                         }}
                       >
-                        3cm
-                      </button>
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Waist to Crotch
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "50px",
+                          height: "20px",
+                        }}
+                      >
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          1cm
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    style={{
+                      justifyContent: "left",
+                      display: "flex",
+                      gap: "5px",
+                      // border: "1px solid yellow",
+                      alignItems: "center",
+                      height: "30px",
+                      padding: "3px 0px",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: "45%",
+                        height: "100%",
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "70px",
+                          height: "20px",
+                        }}
+                      >
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Length
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          // gap: "5px",
+                          width: "50px",
+                          height: "20px",
+                        }}
+                      >
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          2cm
+                        </button>
+                      </div>
+                    </div>
+
+                    <div
+                      style={{
+                        width: "45%",
+                        height: "100%",
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          // gap: "5px",
+                          width: "110px",
+                          height: "20px",
+                        }}
+                      >
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Upper Leg Width
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "50px",
+                          height: "20px",
+                        }}
+                      >
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          2cm
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    style={{
+                      justifyContent: "left",
+                      display: "flex",
+                      gap: "5px",
+                      // border: "1px solid yellow",
+                      alignItems: "center",
+                      height: "30px",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: "45%",
+                        height: "100%",
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "70px",
+                          height: "20px",
+                        }}
+                      >
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Inseam
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "50px",
+                          height: "20px",
+                        }}
+                      >
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          3cm
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        width: "45%",
+                        height: "100%",
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "110px",
+                          height: "20px",
+                        }}
+                      >
+                        <p
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Lower Leg Width
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          justifyContent: "left",
+                          display: "flex",
+                          gap: "5px",
+                          width: "50px",
+                          height: "20px",
+                        }}
+                      >
+                        <button
+                          style={{
+                            margin: "0px",
+                            padding: "0px",
+                            color: "#ABABAB",
+                            padding: "0px 3px 0px 0px",
+                          }}
+                        >
+                          3cm
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div
-                  style={{
-                    width: "85%",
-                    height: "50px",
-                    marginTop: "10px",
-                    // backgroundColor: "black",
-                    borderRadius: "5px",
-                    display: "flex",
-                    gap: "6px",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    // border: "1px solid red",
-                  }}
-                >
-                  <div>
+                <div className="appointment-botton-save-cancel-div">
+                  <div  >
                     {" "}
                     <button
-                      style={{
-                        color: "white",
-                        fontSize: "20px",
-                        fontWeight: "200",
-                        backgroundColor: "black",
-                        height: "40px",
-                        borderRadius: "4px",
-                        width: "150px",
-                        border: "none",
-                      }}
+                    className="appointment-botton-save1"
+  
                     >
                       Save
                     </button>{" "}
                   </div>
                   <div>
                     <button
-                      style={{
-                        color: "white",
-                        fontSize: "20px",
-                        fontWeight: "200",
-                        width: "150px",
-                        height: "40px",
-                        backgroundColor: "#A5A5A5",
-                        border: "none",
-                        borderRadius: "4px",
-                      }}
+                    className="appointment-botton-cancel1"
+           
                     >
                       Cancel
                     </button>
@@ -1187,7 +1026,6 @@ const handlenewSize = ()=>{
                       backgroundColor: "black",
                       borderRadius: "4px",
                     }}
-
                     onClick={handleSize}
                   >
                     VIEW SIZE CHART
@@ -1228,33 +1066,82 @@ const handlenewSize = ()=>{
                     // border: "1px solid green",
                     display: "flex",
                     gap: "8px",
-                    justifyContent:"left",
-                    margin:"0px",
-                    padding:"0px"
+                    justifyContent: "left",
+                    margin: "0px",
+                    padding: "0px",
                   }}
                 >
-                  <div style={{width:"100px",height:"30px",borderRadius:"3px",border:'1px solid grey',margin:"0px auto",borderRadius:"3px", display: "flex", alignItems:"center",
-                    justifyContent:"center",color:"#ABABAB"}}> <p style={{}}>23/04/2023</p> </div>
-                  <div style={{width:"100px",height:"30px",borderRadius:"3px",border:'1px solid grey',margin:"0px auto",borderRadius:"3px", display: "flex", alignItems:"center",
-                    justifyContent:"center",color:"#616161",textAlign:"center",display: "flex", alignItems:"center",color:"#ABABAB",textAlign:"center"}}> <p style={{}}>10:30 AM </p></div>
+                  <div
+                    style={{
+                      width: "100px",
+                      height: "30px",
+                      borderRadius: "3px",
+                      border: "1px solid grey",
+                      margin: "0px auto",
+                      borderRadius: "3px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: "#ABABAB",
+                    }}
+                  >
+                    {" "}
+                    <p style={{}}>23/04/2023</p>{" "}
+                  </div>
+                  <div
+                    style={{
+                      width: "100px",
+                      height: "30px",
+                      borderRadius: "3px",
+                      border: "1px solid grey",
+                      margin: "0px auto",
+                      borderRadius: "3px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: "#616161",
+                      textAlign: "center",
+                      display: "flex",
+                      alignItems: "center",
+                      color: "#ABABAB",
+                      textAlign: "center",
+                    }}
+                  >
+                    {" "}
+                    <p style={{}}>10:30 AM </p>
+                  </div>
                 </div>
 
                 <div
-                  style={{
-                    width: "200px",
-                    // height: "50px",
-                    // border: "1px solid green",
-                    display: "flex",
-                    gap: "8px",
-                    alignItems:"top",
-                    justifyContent:"left",
-                    margin:"0px"
-
-                  }}
+              
+              className="appointment-container-last-ed-sa"
                 >
-                    <Link to=""> <button style={{width:"50px",height:"20px",backgroundColor:"",color:"black",padding:"3px 0px",border:"none"}}>Cancel</button></Link>
-                    <button style={{width:"50px",height:"20px",backgroundColor:"",padding:"3px 0px",border:"none"}}>Edit</button>
-                    
+                  <Link to="">
+                    {" "}
+                    <button
+                      style={{
+                        width: "50px",
+                        height: "20px",
+                        backgroundColor: "",
+                        color: "black",
+                        padding: "3px 0px",
+                        border: "none",
+                      }}
+                    >
+                      Cancel
+                    </button>
+                  </Link>
+                  <button
+                    style={{
+                      width: "50px",
+                      height: "20px",
+                      backgroundColor: "",
+                      padding: "3px 0px",
+                      border: "none",
+                    }}
+                  >
+                    Edit
+                  </button>
                 </div>
               </div>
             </div>

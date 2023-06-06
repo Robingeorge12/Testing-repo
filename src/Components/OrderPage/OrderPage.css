@@ -118,6 +118,8 @@
   margin: auto;
   margin-top: 5px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .orderpage-button-info > button {
   width: 100%;
@@ -369,6 +371,13 @@
   margin-top: 18px;
 }
 
+
+div.orderpage-button-info:hover{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+}
 div.orderpage-size-text:hover {
   background-color: black;
   color: white;
@@ -542,8 +551,25 @@ font-weight: 0px;
   color:#B9B9B9;
 }
 
+
+@media screen and (max-width: 1440px){
+
+
+  .orderpage-container-div2-box1-div1-ip {
+    width: 97%;
+    height: 33px;
+    border: none;
+  }
+
+}
+
 @media screen and (max-width: 1024px){
 
+  .orderpage-container-div2-box1-div1-ip {
+    width: 97%;
+    height: 33px;
+    border: none;
+  }
   .orderpage-container-div2-box1-div1-item-div-box1 {
     width: 32%;
     height: 100%;
@@ -590,7 +616,7 @@ font-weight: 0px;
   }
 
   .orderpage-container-div1 {
-    width: 80%;
+    width: 98%;
     margin-top: 301px;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
@@ -604,7 +630,7 @@ font-weight: 0px;
   }
 
   .orderpage-container-div2 {
-    width: 80%;
+    width: 98%;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
       rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -640,7 +666,7 @@ font-weight: 0px;
   }
 
   .orderpage-container-div1 {
-    width: 80%;
+    width: 98%;
     height: 40%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
       rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -650,7 +676,7 @@ font-weight: 0px;
   }
 
   .orderpage-container-div2 {
-    width: 80%;
+    width: 98%;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
       rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -717,15 +743,7 @@ font-weight: 0px;
     line-height: 16px;
   }
 
-  .orderpage-container-div2 {
-    width: 80%;
-    height: 100%;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    /* display: flex; */
-    border-radius: 10px;
-    /* overflow: hidden; */
-  }
+
 
   .orderpage-container-div2-box1-div1-ip {
     width: 97%;

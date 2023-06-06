@@ -200,6 +200,26 @@
   font-size: 20px;
   /* gap: 10px; */
 }
+@media screen and (max-width:1024px){
+    
+    .cartadd-div1 {
+        width: 60%;
+        height: 100%;
+        /* border: 2px solid rgb(13, 0, 255); */
+        border-radius: 10px;
+        /* display: flex; */
+        background-color: white;
+    }
+    .cartadd-div2 {
+        width: 35%;
+        height: 100%;
+        /* border: 2px solid rgb(222, 12, 180); */
+        border-radius: 10px;
+        background-color: white;
+        /* display: flex; */
+    }
+}
+
 
 @media screen and (max-width: 768px) {
   .cartadd-container {
@@ -264,8 +284,10 @@
   }
   .cartadd-div2-price-l1,
   .cartadd-div2-price-l2,
-  .cartadd-div2-price-l3,
-  .cartadd-div2-price-l4>p {
+  .cartadd-div2-price-l3>p {
+    font-size: 20px;
+  }
+  .cartadd-div2-price-l4>h4{
     font-size: 20px;
   }
   .cartadd-img-bottom {

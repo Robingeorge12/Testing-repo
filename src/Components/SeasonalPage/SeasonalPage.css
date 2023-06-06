@@ -68,7 +68,7 @@
     width:100%;
     height:100%;
     object-fit:cover;
-    border-radius: 10px;
+    border-radius: 16px;
   
 } 
 
@@ -134,6 +134,8 @@
   top: 600px;
   border-radius: 10px;
   display: flex;
+  display: flex;
+  align-items: center;
 }
 .season-img-div6>img{
     width: 100%;
@@ -145,5 +147,137 @@
     background-color: grey;
     border-radius: 0px 5px 5px 0px;
     border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
 
+
+}
+
+
+@media screen and (max-width:1440px){
+
+  .seasonal-heading {
+    width: auot;
+    border: 1px solid red;
+    position: absolute;
+    top: 7px;
+    left: 69px;
+    margin: 20px 0px;
+}
+.season-img-div1 {
+  width: 430px;
+}
+.season-img-div2 {
+  width: 430px;
+  border-radius: 8px;
+
+}
+.season-img-div4 {
+
+  width: 340px;
+  left: 557px;
+}
+.season-img-div5 {
+  height: 280px;
+  width: 340px;
+  left: 557px;
+}
+.season-img-div3 {
+  width: 440px;
+  left: 951px;
+}
+.season-img-div6 {
+  width: 834px;
+  display: flex;
+  align-items: center;
+  left: 557px;
+}
+.season-img-div6>button {
+  width: 40px;
+  background-color: grey;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
+}
+
+
+
+}
+
+
+
+
+@media screen and (max-width:1024px){
+  .season-div {
+    width: 98vw;
+    height: 100vh;
+    position: relative;
+    /* background-color: red; */
+}
+
+.season-container {
+    width: 98%;
+    height: auto;
+    /* border: 1px solid red; */
+    /* display: flex; */
+    background-color:yellow;
+    margin:auto;
+}
+
+  .seasonal-heading {
+    width: auot;
+    border: 1px solid red;
+    position: absolute;
+    top: 7px;
+    left: 42px;
+    margin: 20px 0px;
+}
+
+  .season-img-div1 {
+    width: 305px;
+    left: 41px !important;
+}
+
+.season-img-div2 {
+  width: 305px;
+  border-radius: 8px;
+  left: 41px !important;
+
+}
+
+  .season-img-div3 {
+    width: 317px;
+    left: 681px;
+}
+
+
+.season-img-div4 {
+
+  width: 276px;
+   /* width: 340px; */
+   left: 378px;
+}
+.season-img-div5 {
+  width: 276px;
+  /* width: 340px; */
+  left: 378px;
+}
+.season-img-div6 {
+  width: 619px;
+  display: flex;
+  align-items: center;
+  left: 378px;
+}
+
+}
+
+@media screen and (max-width:768px){
+  
 }

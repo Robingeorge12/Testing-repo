@@ -274,7 +274,18 @@ align-items: center;
 
 @media screen and (max-width:768px) {
 
-
+  .navbar-container {
+    width: 96vw;
+    height: 80px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position:sticky;
+    margin: auto;
+    margin-top: 1px;
+   
+  }
 
   .navbar-icon-box {
     width: 100%;
@@ -288,7 +299,7 @@ align-items: center;
   .navbar-icon-box img {
     width: 90%;
     height: 58%;
-    margin-left: 93px;
+    margin-left: -240px;
     margin-bottom: 6px;
 }
   
@@ -303,7 +314,7 @@ align-items: center;
   .navbar-icon-box img {
     /* width: 60%;
     height: 50%; */
-    margin-left: 122px;
+    margin-left: -234px;
 }
 
 
@@ -318,6 +329,7 @@ align-items: center;
     }
   .menu{
     justify-content: left !important;
+    margin-left: 221px;
   }
   .navbar-search-box{
     display: none;

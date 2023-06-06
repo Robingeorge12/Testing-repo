@@ -118,6 +118,8 @@
     margin: auto;
     margin-top: 5px;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .sheduleappointment-button-info > button {
     width: 100%;
@@ -237,7 +239,7 @@
 
   .sheduleappointment-box1 {
     width: 360px;
-    height: 520px;
+    height: 488px;
     border: 1px solid grey;
     /* background-color: aqua; */
     padding:0px 0px 50px 10px;
@@ -400,7 +402,12 @@
   }
   
 
-  
+  div.sheduleappointment-button-info:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+  }
 div.sheduleappointment-size-text:hover{
   background-color:black;
   color:white;
@@ -431,4 +438,536 @@ div.sheduleappointment-card-opton1:hover{
   color:white;
   border-radius: 5px;
   height: 30px;
+}
+.sheduleappointment-box1-div1{
+
+  width: 100%;
+  height: 34%; 
+  display: flex; 
+}
+.sheduleappointment-box1-div1-div1{
+ 
+  width: 75%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sheduleappointment-box1-div1-div2{
+
+  width: 50%;
+  height: 80%;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sheduleappointment-box1-div1-div2-img{
+  width: 75%;
+  height: 100%;
+}
+.sheduleappointment-video-botton-text{
+
+  display: flex; 
+  gap: 10px;
+   margin-top: 5px;
+}
+.sheduleappointment-container-div2-box1-ip-div{
+
+  display: flex;
+  width: 80%;
+  height: 40px;
+ /* border: 1px solid red; */
+  border-radius: 6px;
+  margin-left: 20px;
+ /* backgroundColor: black; */
+}
+.sheduleappointment-container-div2-box1-ip-div-one{
+
+  width: 5%;
+  height: 100%;
+  background-color: #E8E8E8;
+  border-radius: 4px 0px 0px 4px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.sheduleappointment-container-div2-box1-iptag{
+
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  width: 90%;
+  height: 97%;
+  background-color: #E8E8E8;
+  border: none;
+  border-radius: 0px 6px 6px 0px;
+}
+.sheduleappointment-container-div2-box1-heading{
+
+  display: flex;
+   justify-content: left;
+   margin-left: 20px;
+}
+.sheduleappointment-box1-details-name{
+
+}
+.sheduleappointment-box1-details-size{
+
+  width: 30%;
+  height: 50px;
+   /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin: 5px 0px 0px 80px;
+  gap: 5px;
+}
+.sheduleappointment-box1-details-div1{
+
+  width: 100%;
+  height: 22px;
+  display: flex;
+  background-color: #E8E8E8;
+  border-radius: 6px;
+}
+.sheduleappointment-input-button1{
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 6px;
+  background-color: black;
+
+}
+.sheduleappointment-input-button2{
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 6px;
+  background-color: #E8E8E8; 
+}
+.sheduleappointment-box1-div1-div2-del{
+  width: 20%;
+  height: 100%;
+  /* border: 1px solid rebeccapurple; */
+}
+.sheduleappointment-box1-details-name-h4{
+
+  margin: 0pxl;
+  margin-left: -90px;
+}
+
+@media screen and (max-width: 1440px){
+
+  .sheduleappointment-container-div2-box1-heading {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    
+}
+.sheduleappointment-container-div2-box1-sizebox {
+  width: auto;
+  height: 477px;
+}
+.sheduleappointment-box1-div1 {
+  width: 360px;
+  height: 170px;
+  display: flex;
+}
+.sheduleappointment-box1-div1-div1 {
+  width: 238px !important;
+  height: 124px;
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sheduleappointment-box1 {
+  width: 360px !important;
+  height: 428px !important;
+  border: 1px solid grey;
+  /* background-color: aqua; */
+  padding: 0px 0px 50px 10px;
+  border-radius: 10px;
+  justify-content: space;
+}
+.sheduleappointment-box1-div1 {
+  width: 360px;
+  height: 124px !important;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.sheduleappointment-box1-div1-div2-img {
+  width: 82px !important;
+  height: 123px;
+}
+.sheduleappointment-container-div2-box1-ip-div {
+  display: flex;
+  width: 765px;
+  height: 40px;
+  /* border: 1px solid red; */
+  border-radius: 6px;
+  margin-left: 20px;
+}
+.sheduleappointment-container-div2-box1-iptag {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  width: 709px !important;
+}
+.sheduleappointment-video-box {
+  width: 356px !important;
+  height: 40%;
+  /* border: 1px solid blue; */
+  border-radius: 8px;
+}
+
+.sheduleappointment-video-botton-text {
+  display: flex;
+  gap: 10px;
+  width: 360px;
+  height: 30px;
+}
+.sheduleappointment-video-botton-text>button{
+  font-size: 14px;
+}
+
+.sheduleappointment-container-div2-box1-ip-div-one {
+  width: 37px;
+  height: 41px !important;
+}
+
+.sheduleappointment-box2 {
+  width: 471px;
+  height: 550px;
+  /* border: 1px solid rgb(255, 0, 191); */
+}
+
+.sheduleappointment-box1-div1-div2 {
+  width: 50%;
+  height: 80%;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 114px !important;
+}
+
+.sheduleappointment-box1-div1-div2-del{
+
+  width: 20%;
+  height: 100%;
+  margin-left: 45px;
+  /* border: 1px solid rebeccapurple; */
+}
+
+.sheduleappointment-box1-details-name {
+  margin-left: 65px;
+  margin-top: -5px;
+}
+.sheduleappointment-box1-details-size {
+  width: 30%;
+  height: 50px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin: -16px 0px 0px 140px;
+  gap: 5px;
+}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .sheduleappointment-container {
+    width: 96vw !important;
+    height: 96vh !important;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 15px;
+    margin: auto !important;
+}
+
+.sheduleappointment-box1-details-size {
+    width: 30%;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin: 4px 0px 0px 112px;
+    gap: 5px;
+}
+.sheduleappointment-container-div2-box1-sizebox {
+  width: 635px !important;
+  height: 462px !important;
+  margin: auto !important;
+  display: flex;
+  /* border: 1px solid rgb(21, 128, 0); */
+  border-radius: 10px;
+  /* margin-top: 20px; */
+  /* margin-left: 20px; */
+}
+.sheduleappointment-container-div2-box1 {
+  width: 635px;
+  height: 609px;
+  margin: auto;
+  display: flex;
+  /* border: 1px solid rgb(45, 0, 128); */
+  border-radius: 10px;
+  margin-top: 20px;
+  flex-direction: column;
+  /* align-items: center; */
+  /* background-color: aqua; */
+}
+.sheduleappointment-box1 {
+  width: 412px !important;
+  height: 440px !important;
+  border: 1px solid grey;
+  /* background-color: aqua; */
+  padding: 0px 0px 50px 10px;
+  border-radius: 10px;
+  justify-content: space;
+}
+.sheduleappointment-container-div2-box1-heading {
+  display: flex;
+  justify-content: left;
+  margin-left: 0px !important;
+}
+
+.sheduleappointment-box1-div1{
+
+  width: 100%;
+  height: 141px !important; 
+  display: flex; 
+}
+.sheduleappointment-container-div2-box1-ip-div {
+  display: flex;
+  width: 622px;
+  height: 40px;
+  /* border: 1px solid red; */
+  border-radius: 6px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+.sheduleappointment-container-div2-box1-iptag {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  width: 600px;
+}
+
+.sheduleappointment-box1-details-name-h4 {
+  margin: 0pxl;
+  margin-left: -109px;
+  margin: -10px 0px 0px -100px;
+}
+.sheduleappointment-container-div2-box1-ip-div-one {
+  width: 53px;
+  height: 100%;
+  background-color: #E8E8E8;
+  border-radius: 4px 0px 0px 4px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.sheduleappointment-box1-div1-div2 {
+  width: 50%;
+  height: 80%;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.sheduleappointment-box1-div1-div1 {
+  width: 84%;
+  margin-left: -36px;
+}
+
+.sheduleappointment-box1-div1-div2-img {
+  width: 73px !important;
+  height: 100%;
+}
+
+/* {2nd  part.................} */
+
+.sheduleappointment-box2 {
+  width: 400px;
+  height: 489px;
+  /* border: 1px solid rgb(255, 0, 191); */
+  /* background: yellow; */
+  display: flex;
+  /* align-items: center; */
+  justify-self: center;
+  flex-direction: column;
+  /* margin: auto; */
+  padding: 0px 0px 0px 10px;
+  
+}
+
+.sheduleappointment-video-box {
+  width: 276px !important;
+  height: 195px;
+  /* border: 1px solid blue; */
+  border-radius: 8px;
+}
+.sheduleappointment-video-botton-text{
+
+  width: 275px;
+  display: flex; 
+  gap: 10px;
+   margin-top: 5px;
+}
+.sheduleappointment-video-botton-text>h5{
+
+}
+
+.sheduleappointment-video-botton-text>button{
+  display: flex;
+  align-items: center;
+  font-size: 8px;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .sheduleappointment-container {
+    width: 100vw;
+    height: auto;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .sheduleappointment-container-div1 {
+    width: 80%;
+    height: 40%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+
+  .sheduleappointment-container-div2 {
+    width: 80%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* display: flex; */
+    border-radius: 10px;
+    /* overflow: hidden; */
+    margin-bottom: 10px;
+}
+
+.sheduleappointment-text2 {
+  display: none;
+}
+
+  .horizotal-line1 {
+    display: none;
+  }
+  .sheduleappointment-button-info {
+    display: none;
+  }
+
+  .sheduleappointment-address-text {
+    display: none;
+  }
+
+  .sheduleappointment-size-text {
+    display: none;
+  }
+
+  .sheduleappointment-text2 {
+    display: none;
+  }
+
+  .horizotal-line2 {
+    display: none;
+  }
+
+  .sheduleappointment-card-opton1 {
+    display: none;
+  }
+
+
+  .sheduleappointment-container-div2 {
+    width: 80%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* display: flex; */
+    border-radius: 10px;
+    /* overflow: hidden; */
+  }
+
+  .sheduleappointment-box1 {
+    width: 80%;
+    height: auto;
+    border: 1px solid grey;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* background-color: aqua; */
+    /* padding: 0px 0px 50px 10px; */
+    border-radius: 10px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+  }
+
+  .sheduleappointment-container-div2-box1-sizebox {
+    width: auto;
+    height: auto;
+    /* display: flex; */
+    /* border: 1px solid rgb(21, 128, 0); */
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .sheduleappointment-box1 {
+    width: 100%;
+    height: auto;
+    border: 1px solid grey;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* background-color: aqua; */
+    /* padding: 0px 0px 50px 10px; */
+    border-radius: 10px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+  }
+
+
+
+
+
 }

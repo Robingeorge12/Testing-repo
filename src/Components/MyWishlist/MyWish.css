@@ -241,7 +241,7 @@
   /* padding:0px 0px 50px 10px; */
   border-radius: 10px;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-between; */
 }
 
 /* second section right box.................................... */
@@ -406,21 +406,35 @@ div.mywish-card-opton1:hover {
   justify-content: left;
   /* align-items: center; */
 }
-.mywish-box1-icon1{
+.mywish-box1-icon1 {
   display: none;
   width: 10%;
   height: 100%;
 }
-.mywish-box1-icon2{
-
+.mywish-box1-icon2 {
   display: none;
   width: 10%;
   height: 100%;
   margin-top: 10px;
-
 }
-@media screen and (max-width: 1440px){
+.mywish-box1-div-box2 {
+  width: 40%;
+  height: 63%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin-left: 20px;
+  margin-top:-9px;
+}
+.mywish-box1-div-img{
+  width: 20%;
+  height: 82%;
+  object-fit: cover;
+}
 
+@media screen and (max-width: 1440px) {
   .mywish-box1-icon1 {
     display: none;
     width: 35%;
@@ -428,26 +442,45 @@ div.mywish-card-opton1:hover {
     /* border: 1px solid red; */
     justify-content: end;
     align-items: center;
+  }
+  .mywish-box1 {
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid grey; */
+    display: flex;
+    gap: 20px;
+    /* background-color: aqua; */
+    /* padding: 0px 0px 50px 10px; */
+    border-radius: 10px;
+    align-items: center;
+    /* justify-content: space-between; */
 }
-
-
-  .mywish-box1-icon2{
-  
-    
+.mywish-box1-div-box2 {
+  width: 40%;
+  height: 63%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin-left: 20px;
+  margin-top:-9px;
+}
+.mywish-box1-div-img {
+  width: 20%;
+  height: 82%;
+  object-fit: cover;
+}
+  .mywish-box1-icon2 {
     display: flex;
     width: 10%;
     height: 100%;
     margin-top: 10px;
-  
   }
-
-
 }
 
 
-
-@media screen and (max-width: 1024px){
-
+@media screen and (max-width: 1024px) {
   .mywish-box1-icon1 {
     display: none;
     width: 35%;
@@ -455,22 +488,43 @@ div.mywish-card-opton1:hover {
     /* border: 1px solid red; */
     justify-content: end;
     align-items: center;
+  }
+  .mywish-box1 {
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid grey; */
+    display: flex;
+    gap: 20px;
+    /* background-color: aqua; */
+    /* padding: 0px 0px 50px 10px; */
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-
-  .mywish-box1-icon2{
-  
-    
+  .mywish-box1-icon2 {
     display: flex;
     width: 10%;
     height: 100%;
     margin-top: 10px;
-  
+  }
+  .mywish-box1-div-box2 {
+    width: 40%;
+    height: 63%;
+    /* border: 1px solid black; */
+    margin-top:-9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .mywish-box1-div-img{
+    width: 20%;
+    height: 82%;
+    object-fit: cover;
   }
 
 }
-
-
 
 @media screen and (max-width: 768px) {
   .mywish-container {
@@ -582,7 +636,7 @@ div.mywish-card-opton1:hover {
     border-radius: 10px;
     align-items: center;
     /* justify-content: space-evenly; */
-}
+  }
 
   .mywish-box1-div {
     width: 80%;
@@ -612,20 +666,18 @@ div.mywish-card-opton1:hover {
     /* border: 1px solid red; */
     justify-content: end;
     align-items: center;
-}
-.mywish-box1-icon1-style{
-height: 20%;
-height: 28px;
-width: 28px;
-}
+  }
+  .mywish-box1-icon1-style {
+    height: 20%;
+    height: 28px;
+    width: 28px;
+  }
 
-  .mywish-box1-icon2{
-  
+  .mywish-box1-icon2 {
     display: none;
     width: 10%;
     height: 100%;
     margin-top: 10px;
-  
   }
 
   .mywish-box1-card1-sbi {

@@ -1,10 +1,10 @@
 import React from "react";
-import "./Profile.css";
+import "./ProfileEdit.css";
 import { FaDropbox } from "react-icons/fa";
 import man from "../../Assets/Image/manj.svg";
 import { Link, useNavigate } from "react-router-dom";
 
-function Profile() {
+function ProfileEdit() {
   const navigate = useNavigate();
 
   const handleOrder = () => {
@@ -38,34 +38,34 @@ function Profile() {
   const handleNote = () => {
     navigate("/notification");
   };
-  const handleProfileEdit = () => {
-    navigate("/profileedit");
+  const handleProfile = () => {
+    navigate("/profile");
   };
 
   return (
-    <div className="profile-container">
-      <div className="profile-container-div1">
-        <div className="profile-name-box">
-          <div className="profile-name-box1">
+    <div className="profileedit-container">
+      <div className="profileedit-container-div1">
+        <div className="profileedit-name-box">
+          <div className="profileedit-name-box1">
             <div>
               <img src={man} alt="" />
             </div>
           </div>
-          <div className="profile-name-box2">
+          <div className="profileedit-name-box2">
             <p>Hello,</p>
             <p style={{ margin: "0px", fontWeight: "700" }}>Mr Manjunadha</p>
           </div>
         </div>
 
-        <div className="profile-icon-box">
-          <div className="profile-name-icon">
+        <div className="profileedit-icon-box">
+          <div className="profileedit-name-icon">
             <FaDropbox />
           </div>
-          <div className="profile-name-text" onClick={handleOrder}>
+          <div className="profileedit-name-text" onClick={handleOrder}>
             <p style={{ margin: "0px", fontWeight: "700" }}>My Order</p>
           </div>
         </div>
-        <div className="profile-text2">
+        <div className="profileedit-text2">
           <p
             style={{
               fontWeight: "700",
@@ -78,9 +78,8 @@ function Profile() {
           </p>
         </div>
         <div className="horizotal-line1"></div>
-        <div className="profile-button-info">
-         
-               <p
+        <div className="profileedit-button-info">
+          <p
             style={{
               fontWeight: "400",
               display: "flex",
@@ -88,14 +87,11 @@ function Profile() {
               justifyContent: "left",
             }}
           >
-         
-         
-              Profile Information
-              </p>
-          
+            Profile Information
+          </p>
         </div>
 
-        <div className="profile-address-text" onClick={handlemanage}>
+        <div className="profileedit-address-text" onClick={handlemanage}>
           <p
             style={{
               fontWeight: "400",
@@ -108,11 +104,11 @@ function Profile() {
           </p>
         </div>
 
-        <div className="profile-size-text" onClick={handleSize}>
+        <div className="profileedit-size-text" onClick={handleSize}>
           <p style={{ fontWeight: "400" }}>My Size</p>
         </div>
 
-        <div className="profile-text2">
+        <div className="profileedit-text2">
           <p
             style={{
               fontWeight: "500",
@@ -125,7 +121,7 @@ function Profile() {
           </p>
         </div>
         <div className="horizotal-line2"></div>
-        <div className="profile-card-opton1">
+        <div className="profileedit-card-opton1">
           <p
             style={{
               fontWeight: "400",
@@ -138,7 +134,7 @@ function Profile() {
           </p>
         </div>
 
-        <div className="profile-card-opton1" onClick={handleUpi}>
+        <div className="profileedit-card-opton1" onClick={handleUpi}>
           <p
             style={{
               fontWeight: "400",
@@ -151,7 +147,7 @@ function Profile() {
           </p>
         </div>
 
-        <div className="profile-card-opton1" onClick={handleCard}>
+        <div className="profileedit-card-opton1" onClick={handleCard}>
           <p
             style={{
               fontWeight: "400",
@@ -164,7 +160,7 @@ function Profile() {
           </p>
         </div>
 
-        <div className="profile-text2">
+        <div className="profileedit-text2">
           <p
             style={{
               fontWeight: "500",
@@ -178,7 +174,7 @@ function Profile() {
         </div>
         <div className="horizotal-line2"></div>
 
-        <div className="profile-card-opton1" onClick={handleWish}>
+        <div className="profileedit-card-opton1" onClick={handleWish}>
           <p
             style={{
               fontWeight: "400",
@@ -191,7 +187,7 @@ function Profile() {
           </p>
         </div>
 
-        <div className="profile-card-opton1">
+        <div className="profileedit-card-opton1">
           <p
             style={{
               fontWeight: "400",
@@ -204,7 +200,7 @@ function Profile() {
           </p>
         </div>
 
-        <div className="profile-card-opton1" onClick={handleNote}>
+        <div className="profileedit-card-opton1" onClick={handleNote}>
           <p
             style={{
               fontWeight: "400",
@@ -217,7 +213,7 @@ function Profile() {
           </p>
         </div>
 
-        <div className="profile-card-opton1" onClick={handleRate}>
+        <div className="profileedit-card-opton1" onClick={handleRate}>
           <p
             style={{
               fontWeight: "400",
@@ -231,88 +227,90 @@ function Profile() {
         </div>
       </div>
 
-      <div className="profile-container-div2">
-        <div className="profile-container-div2-box1">
-          <div className="profile-personal-div">
-            <p className="profile-personal-div-head">Personal Information</p>
-            <div className="profile-personal-details">
-
+      <div className="profileedit-container-div2">
+        <div className="profileedit-container-div2-box1">
+          <div className="profileedit-personal-div">
+            <p className="profileedit-personal-div-head">
+              Personal Information
+            </p>
+            <div className="profileedit-personal-details">
               {/* {............} */}
-              <div className="profile-personal-details-div1">
-                <p className="profile-personal-details-div1-name">Name:</p>
-                <div className="profile-personal-details-div1-ipdiv1">
+              <div className="profileedit-personal-details-div1">
+                <p className="profileedit-personal-details-div1-name">Name:</p>
+                <div className="profileedit-personal-details-div1-ipdiv1">
                   <input
-                    className="profile-personal-details-div1-ip1"
+                    className="profileedit-personal-details-div1-ip1"
                     type="text"
                   />
                   <input
-                    className="profile-personal-details-div1-ip2"
+                    className="profileedit-personal-details-div1-ip2"
                     type="text"
                   />
                 </div>
-                <Link to="/profileedit" className="profile-personal-details-link1">
-                  <button id="b1">Edit</button>
+                <Link to="" className="profileedit-personal-details-link1">
+                  <button id="b1">Save</button>
                 </Link>
               </div>
 
-
-              <div className="profile-personal-details-div2">
-                <p className="profile-personal-details-div1-name">Gender:</p>
-                <div className="profile-personal-details-div2-ipdiv2">
-                  <div className="profile-personal-details-div1-ipdiv2-label-a">
+              <div className="profileedit-personal-details-div2">
+                <p className="profileedit-personal-details-div1-name">
+                  Gender:
+                </p>
+                <div className="profileedit-personal-details-div2-ipdiv2">
+                  <div className="profileedit-personal-details-div1-ipdiv2-label-a">
                     <label htmlFor="">
                       Male
-                  <input
-                    className="profile-personal-details-div1-rd1"
-                    type="radio"
-                  />
-                  </label>
+                      <input
+                        className="profileedit-personal-details-div1-rd1"
+                        type="radio"
+                      />
+                    </label>
                   </div>
 
-                  <div className="profile-personal-details-div1-ipdiv2-label-b">
+                  <div className="profileedit-personal-details-div1-ipdiv2-label-b">
                     <label htmlFor="">
                       Female
-                  <input
-                    className="profile-personal-details-div1-rd2"
-                    type="radio"
-                  />
-                  </label>
+                      <input
+                        className="profileedit-personal-details-div1-rd2"
+                        type="radio"
+                      />
+                    </label>
                   </div>
                 </div>
-                <Link to="/profileedit" className="profile-personal-details-link1">
-                  <button  id="b1">Edit</button>
-                </Link>
-              </div>
-
-
-              <div className="profile-personal-details-div3">
-                <p className="profile-personal-details-div1-name">Gmail:</p>
-                <div className="profile-personal-details-div3-ipdiv3">
-                  <input
-                    className="profile-personal-details-div3-ip1"
-                    type="text"
-                  />
-                </div>
-                <Link to="/profileedit" className="profile-personal-details-link1">
+                <Link to="" className="profileedit-personal-details-link1">
                   <button id="b1">Edit</button>
                 </Link>
               </div>
 
-
-              <div className="profile-personal-details-div4">
-                <p className="profile-personal-details-div1-name">Mobile Number:</p>
-                <div className="profile-personal-details-div4-ipdiv4">
+              <div className="profileedit-personal-details-div3">
+                <p className="profileedit-personal-details-div1-name">Gmail:</p>
+                <div className="profileedit-personal-details-div3-ipdiv3">
                   <input
-                    className="profile-personal-details-div4-ip1"
+                    className="profileedit-personal-details-div3-ip1"
                     type="text"
                   />
                 </div>
-                <Link to="/profileedit" className="profile-personal-details-link1">
+                <Link to="" className="profileedit-personal-details-link1">
                   <button id="b1">Edit</button>
                 </Link>
               </div>
 
-              {/* <div className="profile-personal-details-box1">
+              <div className="profileedit-personal-details-div4">
+                <p className="profileedit-personal-details-div1-name">
+                  Mobile Number:
+                </p>
+                <div className="profileedit-personal-details-div4-ipdiv4">
+                  <input
+                    className="profileedit-personal-details-div4-ip1"
+                    type="text"
+                  />
+                </div>
+                <Link to="" className="profileedit-personal-details-link1">
+                  <button id="b1">Edit</button>
+                </Link>
+              </div>
+
+              {/* <div className="profileedit-personal-details-box1">
                 <div className="personal-info1">
                   <p className="personal-info1-inputs">Name:</p>
                   <p className="personal-info1-inputs">Gender:</p>
@@ -361,7 +359,7 @@ function Profile() {
                 </div>
               </div> */}
 
-              {/* <div className="profile-personal-details-box2">
+              {/* <div className="profileedit-personal-details-box2">
     <p style={{textAlign:"justify",color:"white"}}>Note for devs:</p>
     <p style={{textAlign:"justify",color:"white"}}>To change or update their mobile number, they must enter the OTPs of both old and new mobile, same for the email too.</p>
 </div> */}
@@ -369,56 +367,56 @@ function Profile() {
           </div>
         </div>
 
-        <div className="profile-container-div2-box2">
-          <div className="profile-container-div2-box2-head">
+        <div className="profileedit-container-div2-box2">
+          <div className="profileedit-container-div2-box2-head">
             <h4>FAQs</h4>
           </div>
 
-          <div className="profile-faq1">
-            <h5 className="profile-faq1-h5tag">
+          <div className="profileedit-faq1">
+            <h5 className="profileedit-faq1-h5tag">
               What happens when I update my email address or(mobile number)?{" "}
             </h5>
-            <p className="profile-faq1-text">
+            <p className="profileedit-faq1-text">
               Your login email id(or mobile number)changes, likewise. You will
               receive all account related communications on your updated mobile
               number(or email address)
             </p>
           </div>
-          <div className="profile-faq2">
-            <h5 className="profile-faq1-h5tag">
+          <div className="profileedit-faq2">
+            <h5 className="profileedit-faq1-h5tag">
               What happens when I update my email address or(mobile number)?{" "}
             </h5>
-            <p className="profile-faq1-text">
+            <p className="profileedit-faq1-text">
               Your login email id(or mobile number)changes, likewise. You will
               receive all account related communications on your updated mobile
               number(or email address)
             </p>
           </div>
-          <div className="profile-faq3">
-            <h5 className="profile-faq1-h5tag">
+          <div className="profileedit-faq3">
+            <h5 className="profileedit-faq1-h5tag">
               What happens when I update my email address or(mobile number)?{" "}
             </h5>
-            <p className="profile-faq1-text">
+            <p className="profileedit-faq1-text">
               Your login email id(or mobile number)changes, likewise. You will
               receive all account related communications on your updated mobile
               number(or email address)
             </p>
           </div>
-          <div className="profile-faq4">
-            <h5 className="profile-faq1-h5tag">
+          <div className="profileedit-faq4">
+            <h5 className="profileedit-faq1-h5tag">
               What happens when I update my email address or(mobile number)?{" "}
             </h5>
-            <p className="profile-faq1-text">
+            <p className="profileedit-faq1-text">
               Your login email id(or mobile number)changes, likewise. You will
               receive all account related communications on your updated mobile
               number(or email address)
             </p>
           </div>
-          <div className="profile-faq5"></div>
+          <div className="profileedit-faq5"></div>
         </div>
       </div>
     </div>
   );
 }
 
-export default Profile;
+export default ProfileEdit;

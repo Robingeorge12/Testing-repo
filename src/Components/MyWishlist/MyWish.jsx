@@ -27,57 +27,51 @@ const style = {
 };
 
 function MyWish() {
-
   const navigate = useNavigate();
 
+  const handleOrder = () => {
+    navigate("/order");
+  };
 
-  const handleOrder = ()=>{
-    navigate("/order")
-    }
+  const handleProfile = () => {
+    navigate("/profile");
+  };
 
+  const handlemanage = () => {
+    navigate("/manageadd");
+  };
 
-    const handleProfile = ()=>{
-      navigate("/profile")
-      }
-  
-const handlemanage = ()=>{
-navigate("/manageadd")
-}
+  const handleSize = () => {
+    navigate("/mysize");
+  };
 
-const handleSize = ()=>{
-  navigate("/mysize")
-  }
-  
-  const handleUpi = ()=>{
-    navigate("/paymentpage")
-  }
+  const handleUpi = () => {
+    navigate("/paymentpage");
+  };
 
-  const handleCard = ()=>{
-    navigate("/saved")
-  }
+  const handleCard = () => {
+    navigate("/saved");
+  };
 
-  
-  const handleWish = ()=>{
-    navigate("/mywish")
-  }
+  const handleWish = () => {
+    navigate("/mywish");
+  };
 
-  
-  const handleRate = ()=>{
-    navigate("/rating")
-  }
+  const handleRate = () => {
+    navigate("/rating");
+  };
 
+  const handleNote = () => {
+    navigate("/notification");
+  };
 
-  const handleNote = ()=>{
-    navigate("/notification")
-  }
+  const handleEdit = () => {
+    navigate("/editsize");
+  };
 
-const handleEdit = ()=>{
-navigate("/editsize")
-}
-
-const handleAdd = ()=>{
-  navigate("/addaddress")
-  }
+  const handleAdd = () => {
+    navigate("/addaddress");
+  };
 
   return (
     <div className="mywish-container">
@@ -115,11 +109,11 @@ const handleAdd = ()=>{
           </p>
         </div>
         <div className="horizotal-line1"></div>
-        <div className="mywish-button-info"  onClick={handleProfile}>
+        <div className="mywish-button-info" onClick={handleProfile}>
           <button>Profile Information</button>
         </div>
 
-        <div className="mywish-address-text"  onClick={handlemanage}>
+        <div className="mywish-address-text" onClick={handlemanage}>
           <p
             style={{
               fontWeight: "400",
@@ -132,7 +126,7 @@ const handleAdd = ()=>{
           </p>
         </div>
 
-        <div className="mywish-size-text"  onClick={handleSize}>
+        <div className="mywish-size-text" onClick={handleSize}>
           <p style={{ fontWeight: "400" }}>My Sizes</p>
         </div>
 
@@ -162,7 +156,7 @@ const handleAdd = ()=>{
           </p>
         </div>
 
-        <div className="mywish-card-opton1"  onClick={handleUpi}>
+        <div className="mywish-card-opton1" onClick={handleUpi}>
           <p
             style={{
               fontWeight: "400",
@@ -175,7 +169,7 @@ const handleAdd = ()=>{
           </p>
         </div>
 
-        <div className="mywish-card-opton1"  onClick={handleCard}>
+        <div className="mywish-card-opton1" onClick={handleCard}>
           <p
             style={{
               fontWeight: "400",
@@ -202,7 +196,7 @@ const handleAdd = ()=>{
         </div>
         <div className="horizotal-line2"></div>
 
-        <div className="mywish-card-opton1"  onClick={handleWish}>
+        <div className="mywish-card-opton1" onClick={handleWish}>
           <p
             style={{
               fontWeight: "400",
@@ -228,7 +222,7 @@ const handleAdd = ()=>{
           </p>
         </div>
 
-        <div className="mywish-card-opton1"  onClick={handleNote}>
+        <div className="mywish-card-opton1" onClick={handleNote}>
           <p
             style={{
               fontWeight: "400",
@@ -241,7 +235,7 @@ const handleAdd = ()=>{
           </p>
         </div>
 
-        <div className="mywish-card-opton1"  onClick={handleRate}>
+        <div className="mywish-card-opton1" onClick={handleRate}>
           <p
             style={{
               fontWeight: "400",
@@ -266,22 +260,9 @@ const handleAdd = ()=>{
 
           <div className="mywish-container-div2-box1-sizebox">
             <div className="mywish-box1">
-              <div
-              className="mywish-box1-div"
-               
-              >
-                <img style={{ width: "20%", height: "100%" }} src={st} alt="" />
-                <div
-                  style={{
-                    width: "40%",
-                    height: "100%",
-                    // border: "1px solid black",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "left",
-                    textAlign: "left",
-                  }}
-                >
+              <div className="mywish-box1-div">
+                <img className="mywish-box1-div-img"  src={st} alt="" />
+                <div className="mywish-box1-div-box2">
                   <h5>Long Sleeve T-Shirt (Black)</h5>
 
                   <div
@@ -317,13 +298,16 @@ const handleAdd = ()=>{
                       alignItems: "center",
                     }}
                   >
-                     <p
+                    <p
                       style={{
                         fontWeight: "12px",
                         color: "black",
                         fontWeight: "700",
-                        textAlign:"left"
-                      }}>$1500</p>
+                        textAlign: "left",
+                      }}
+                    >
+                      $1500
+                    </p>
                     <p style={{ fontWeight: "5px", color: "grey" }}>$2000</p>
                     <p
                       style={{
@@ -337,121 +321,101 @@ const handleAdd = ()=>{
                   </div>
                 </div>
 
-<div className="mywish-box1-icon1">  <RiDeleteBin5Line className="mywish-box1-icon1-style" /></div>
-
-              </div>
-
-              <div
-              className="mywish-box1-icon2"
-              >
-                <RiDeleteBin5Line />
-              </div>
-            </div>
-
-<hr style={{width:"110%",height:"1.5px",color:"grey"}} />
-
-
-<div className="mywish-box1">
-              <div
-           className="mywish-box1-div"
-              >
-                <img style={{ width: "20%", height: "100%" }} src={st} alt="" />
-                <div
-                  style={{
-                    width: "40%",
-                    height: "100%",
-                    // border: "1px solid black",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "left",
-                    textAlign: "left",
-                  }}
-                >
-                  <h5>Long Sleeve T-Shirt (Black)</h5>
-
-                  <div
-                    style={{
-                      width: "100px",
-                      height: "30px",
-                      display: "flex",
-                      gap: "10px",
-                      justifyContent: "center",
-                      textAlign: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <button
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        textAlign: "center",
-                      }}
-                    >
-                      4.4 <AiFillStar />
-                    </button>
-                    <p>(149)</p>
-                  </div>
-                  <div
-                    style={{
-                      width: "200px",
-                      height: "30px",
-                      display: "flex",
-                      gap: "10px",
-                      justifyContent: "left",
-                      textAlign: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                     <p
-                      style={{
-                        fontWeight: "12px",
-                        color: "black",
-                        fontWeight: "700",
-                        textAlign:"left"
-                      }}>$1500</p>
-                    <p style={{ fontWeight: "5px", color: "grey" }}>$2000</p>
-                    <p
-                      style={{
-                        fontWeight: "8px",
-                        color: "black",
-                        fontWeight: "700",
-                      }}
-                    >
-                      5 % OFF
-                    </p>
-                  </div>
+                <div className="mywish-box1-icon1">
+                  {" "}
+                  <RiDeleteBin5Line className="mywish-box1-icon1-style" />
                 </div>
-
-                <div className="mywish-box1-icon1">  <RiDeleteBin5Line className="mywish-box1-icon1-style" /></div>
               </div>
 
-              <div
-              className="mywish-box1-icon2"
-              >
+              <div className="mywish-box1-icon2">
                 <RiDeleteBin5Line />
               </div>
             </div>
 
+            <hr style={{ width: "110%", height: "1.5px", color: "grey" }} />
 
-            <hr style={{width:"110%",height:"1.5px",color:"grey"}} />
-
-
-            
             <div className="mywish-box1">
-              <div
-            className="mywish-box1-div"
-              >
-                <img style={{ width: "20%", height: "100%" }} src={st} alt="" />
+              <div className="mywish-box1-div">
+                <img className="mywish-box1-div-img" src={st} alt="" />
                 <div
-                  style={{
-                    width: "40%",
-                    height: "100%",
-                    // border: "1px solid black",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "left",
-                    textAlign: "left",
-                  }}
+             className="mywish-box1-div-box2"
+                >
+                  <h5>Long Sleeve T-Shirt (Black)</h5>
+
+                  <div
+                    style={{
+                      width: "100px",
+                      height: "30px",
+                      display: "flex",
+                      gap: "10px",
+                      justifyContent: "center",
+                      textAlign: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <button
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        textAlign: "center",
+                      }}
+                    >
+                      4.4 <AiFillStar />
+                    </button>
+                    <p>(149)</p>
+                  </div>
+                  <div
+                    style={{
+                      width: "200px",
+                      height: "30px",
+                      display: "flex",
+                      gap: "10px",
+                      justifyContent: "left",
+                      textAlign: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <p
+                      style={{
+                        fontWeight: "12px",
+                        color: "black",
+                        fontWeight: "700",
+                        textAlign: "left",
+                      }}
+                    >
+                      $1500
+                    </p>
+                    <p style={{ fontWeight: "5px", color: "grey" }}>$2000</p>
+                    <p
+                      style={{
+                        fontWeight: "8px",
+                        color: "black",
+                        fontWeight: "700",
+                      }}
+                    >
+                      5 % OFF
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mywish-box1-icon1">
+                  {" "}
+                  <RiDeleteBin5Line className="mywish-box1-icon1-style" />
+                </div>
+              </div>
+
+              <div className="mywish-box1-icon2">
+                <RiDeleteBin5Line />
+              </div>
+            </div>
+
+            <hr style={{ width: "110%", height: "1.5px", color: "grey" }} />
+
+            <div className="mywish-box1">
+              <div className="mywish-box1-div">
+                <img className="mywish-box1-div-img" src={st} alt="" />
+                <div
+             className="mywish-box1-div-box2"
                 >
                   <h5>Long Sleeve T-Shirt (Black)</h5>
 
@@ -493,8 +457,11 @@ const handleAdd = ()=>{
                         fontWeight: "12px",
                         color: "black",
                         fontWeight: "700",
-                        textAlign:"left"
-                      }}>$1500</p>
+                        textAlign: "left",
+                      }}
+                    >
+                      $1500
+                    </p>
                     <p style={{ fontWeight: "5px", color: "grey" }}>$2000</p>
                     <p
                       style={{
@@ -507,16 +474,16 @@ const handleAdd = ()=>{
                     </p>
                   </div>
                 </div>
-                <div className="mywish-box1-icon1">  <RiDeleteBin5Line className="mywish-box1-icon1-style" /></div>
+                <div className="mywish-box1-icon1">
+                  {" "}
+                  <RiDeleteBin5Line className="mywish-box1-icon1-style" />
+                </div>
               </div>
 
-              <div
-              className="mywish-box1-icon2"
-              >
+              <div className="mywish-box1-icon2">
                 <RiDeleteBin5Line />
               </div>
             </div>
-
 
             {/* right section ................................................................*/}
 

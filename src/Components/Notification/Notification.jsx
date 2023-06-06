@@ -13,7 +13,7 @@ import ro from "../../Assets/Image/ro.svg";
 import tik from "../../Assets/Image/tik.svg";
 import ptm from "../../Assets/Image/ptm.svg";
 import goog from "../../Assets/Image/goog.svg";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import dum from "../../Assets/Image/dum.svg";
 import dum1 from "../../Assets/Image/dum1.svg";
@@ -31,6 +31,35 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
+
+const notiDetail = [
+  {
+    head: "Order Out For Delivery",
+    textMat:
+      "Your order containing Tshirt will be delivered today. Use 5252 as security pin to receive your order",
+  },
+  {
+    head: "Ready to dispatch",
+    textMat:
+      "Your order containing Tshirt will be delivered today. Use 5252 as security pin to receive your order",
+  },
+  {
+    head: "Review your latest purchase!",
+    textMat:
+      "Your order containing Tshirt will be delivered today. Use 5252 as security pin to receive your order",
+  },
+  {
+    head: "Summer deals",
+    textMat:
+      "Your order containing Tshirt will be delivered today. Use 5252 as security pin to receive your order",
+  },
+  {
+    head: "END-OF-SEASON SALE",
+    textMat:
+      "Your order containing Tshirt will be delivered today. Use 5252 as security pin to receive your order",
+  },
+];
+
 
 function Notification() {
   const navigate = useNavigate();
@@ -257,7 +286,7 @@ function Notification() {
           </div>
 
           <div className="noti-container-div2-box1-sizebox">
-            <div className="noti-box1">
+          {notiDetail.length ==0 ?  <div className="noti-box1">
               {/* <div
                 style={{
                   width: "80%",
@@ -299,13 +328,11 @@ function Notification() {
 
               <div
                className="noti-box1-text"
-             
               >
                 <h5>No Notifications!</h5>
                 <p style={{ color: "grey" }}>Your are all caught up.</p>
               </div>
-            </div>
-
+            </div> : <Navigate to="/notificationpage" /> }
             {/* right section ................................................................*/}
 
             <div className="noti-box2">

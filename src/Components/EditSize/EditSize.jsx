@@ -105,7 +105,7 @@ function EditSize() {
         </div>
 
         <div className="editsize-size-text" onClick={handleSize}>
-          <p style={{ fontWeight: "500" }}>My Sizes</p>
+          <p style={{ fontWeight: "00" }}>My Sizes</p>
         </div>
 
         <div className="editsize-text2">

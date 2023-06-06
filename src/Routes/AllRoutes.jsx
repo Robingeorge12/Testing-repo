@@ -44,6 +44,7 @@ import CartAddress from '../Components/CartAddress/CartAddress'
 import CartPay from '../Components/CartPay/CartPay'
 import DropeBox from '../Components/DropeDownBox/DropeBox'
 import SideBar from '../Components/SideBar/SideBar'
+import ProfileEdit from '../Components/ProfileEdit/ProfileEdit'
 
 
 function AllRoutes() {
@@ -54,7 +55,9 @@ function AllRoutes() {
 <Route path="/" element={<Home />} />
 <Route path="/login" element={<Login />} />
 <Route path="/signup" element={<Signup />} />
+
 <Route path="/navbar" element={<Navbar />} />
+
 <Route path="/homepage" element={<HomePage />} />
 <Route path="/dealspage" element={<DealsPage />} />
 <Route path="/seasonalpage" element={<SeasonalPage />} />
@@ -67,7 +70,11 @@ function AllRoutes() {
 <Route path="/product" element={<ProductPage />} />
 <Route path="/moreproduct" element={<MoreProduct />} />
 <Route path="/customize" element={<Customize />} />
+
+
+
 <Route path="/profile" element={<Profile />} />
+<Route path="/profileedit" element={<ProfileEdit />} />
 <Route path="/manageadd" element={<ManageAddress />} />
 <Route path="/editaddress" element={<EditAddress />} />
 <Route path="/mysize" element={<MySize />} />

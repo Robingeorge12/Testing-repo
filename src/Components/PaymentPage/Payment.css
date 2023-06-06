@@ -556,7 +556,7 @@ div.paymentpage-card-opton1:hover{
     box-sizing: border-box;
     gap: 15px;
     flex-direction: column;
-    margin-top: 194px;
+    margin-top: 188px !important ;
 }
 
 .paymentpage-container-div1 {

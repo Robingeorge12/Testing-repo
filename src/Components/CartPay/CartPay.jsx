@@ -23,14 +23,13 @@ const item = [
 ];
 
 function CartPay() {
-
-    const navigate = useNavigate();
-//     const handlePayCart = ()=>{
-//   navigate('/cartpay')
-//     }
-const handleOrder = ()=>{
-    navigate('/order')
-}
+  const navigate = useNavigate();
+  //     const handlePayCart = ()=>{
+  //   navigate('/cartpay')
+  //     }
+  const handleOrder = () => {
+    navigate("/order");
+  };
 
   return (
     <div className="cartpay-container">
@@ -39,27 +38,32 @@ const handleOrder = ()=>{
           <p style={{ fontWeight: "700" }}>PAYMENT OPTIONS</p>
         </div>
 
-        <hr style={{ width: "100%", height: "4px", color: "grey", backgroundColor:"#8C8C8C" }} />
+        <hr
+          style={{
+            width: "100%",
+            height: "4px",
+            color: "grey",
+            backgroundColor: "#8C8C8C",
+          }}
+        />
 
-        <h4 style={{ textAlign: "left", marginLeft: "54px" }}>Saved UPIs</h4>
+        <h4 className="cartpay-div1-box1-heading-first">Saved UPIs</h4>
 
         <div className="cartpay-item-box1">
-          <input
-            type="radio"
-            style={{ width: "14px", height: "14px", backgroundColor: "red" }}
-          />
-          <img
-            src={ph}
-            style={{
-              width: "37px",
-              height: "38px",
-              borderRadius: "50%",
-              border: "none",
-            }}
-            alt=""
-          />
-          <p style={{ fontSize: "18px" }}>Phonepe UPI ID</p>
-          <p style={{ fontSize: "18px" }}>6304897782@ybl</p>
+          <input type="radio" className="cartpay-div1-box1-ipradio" />
+          <img src={ph} className="cartpay-div1-box1-phonepay" alt="" />
+          <p
+            className="cartpay-div1-box1-ph-ptag1"
+            style={{ fontSize: "18px" }}
+          >
+            Phonepe UPI ID
+          </p>
+          <p
+            className="cartpay-div1-box1-ph-ptag2"
+            style={{ fontSize: "18px" }}
+          >
+            6304897782@ybl
+          </p>
         </div>
 
         <hr
@@ -68,7 +72,7 @@ const handleOrder = ()=>{
             height: "1px",
             color: "grey",
             marginTop: "10px",
-            backgroundColor:"#8C8C8C"
+            backgroundColor: "#8C8C8C",
           }}
         />
 
@@ -94,15 +98,12 @@ const handleOrder = ()=>{
             height: "1px",
             color: "grey",
             marginTop: "10px",
-            backgroundColor:"#8C8C8C"
+            backgroundColor: "#8C8C8C",
           }}
         />
 
         <div className="cartpay-item-box1">
-          <input
-            type="radio"
-            style={{ width: "14px", height: "14px",}}
-          />
+          <input type="radio" style={{ width: "14px", height: "14px" }} />
           <img
             src={ptm}
             style={{
@@ -113,8 +114,8 @@ const handleOrder = ()=>{
             }}
             alt=""
           />
-          <p style={{ fontSize: "18px" }}>Phonepe UPI ID</p>
-          <p style={{ fontSize: "18px" }}>6304897782@ybl</p>
+          <p>Phonepe UPI ID</p>
+          <p>6304897782@ybl</p>
         </div>
 
         <hr
@@ -123,293 +124,86 @@ const handleOrder = ()=>{
             height: "4px",
             color: "grey",
             margin: "20px 0px",
-             backgroundColor:"#8C8C8C"
+            backgroundColor: "#8C8C8C",
           }}
         />
 
-<h4 style={{ textAlign: "left", marginLeft: "54px",marginTop:"0px" }}>Saved Cards</h4>
+        <h4 className="cartpay-item-box1-h4-one">Saved Cards</h4>
 
         <div className="cartpay-card-div">
-
-
-          <div
-            style={{
-              width: "40%",
-              height: "60%",
-            //   border: "1px solid red",
-              marginTop: "5px",
-              display: "flex",
-            //   marginLeft: "20px",
-            //   justifyContent:"left"
-            }}
-          >
-            <div
-              style={{
-                width: "10%",
-                height: "100%",
-                // border: "1px solid green",
-              }}
-            >
-              <input type="radio" style={{ width: "14px", height: "14px",float:"left", }} />
+          <div className="cartpay-card-div-box2">
+            <div className="cartpay-card-div-box3">
+              <input className="cartpay-card-div-box3-ip" type="radio" />
             </div>
 
-            <div
-              style={{
-                width: "80%",
-                height: "100%",
-                // border: "1px solid blue",
-              }}
-            >
-              <img style={{ width: "100%", height: "100%" }} src={cd} alt="" />
-              <div
-                style={{
-                  width: "45px",
-                  height: "27px",
-                  backgroundColor: "white",
-                  borderRadius: "5px",
-                  position: "relative",
-                  top: "-144px",
-                  left: "29px",
-                }}
-              ></div>
-              <img
-                style={{
-                  position: "relative",
-                  top: "-171px",
-                  left: "-105px",
-                  width: "31px",
-                  height: "28px",
-                }}
-                src={sbi}
-                alt=""
-              />
+            <div className="cartpay-card-div-box4">
+              <img className="cartpay-card-div-box4-cdimg" src={cd} alt="" />
+              {/* <div className="cartpay-card-div-box4-planeline"></div> */}
+              {/* <img className="cartpay-card-div-box4-sbi" src={sbi} alt="" /> */}
 
-              <div
-                style={{
-                  width: "48px",
-                  height: "26px",
-                  backgroundColor: "white",
-                  borderRadius: "13px",
-                  position: "relative",
-                  top: "-121px",
-                  left: "234px",
-                }}
-              ></div>
+              <button className="cartpay-card-div-box4-btn">
+                {" "}
+                <img className="cartpay-card-div-box4-sbi" src={sbi} alt="" />
+              </button>
+              {/* <div className="cartpay-card-div-box4-sbi-plaine"></div> */}
 
-              <img
-                style={{
-                  position: "relative",
-                  top: "-150px",
-                  left: "189px",
-                  width: "30px",
-                  height: "30px",
-                }}
-                src={vs}
-                alt=""
-              />
+              <button className="cartpay-card-div-box4-btn1">
+                {" "}
+                <img className="cartpay-card-div-box4-vs" src={vs} alt="" />
+              </button>
 
-              <img
-                style={{
-                  position: "relative",
-                  top: "-169px",
-                  left: "-29px",
-                  width: "168px",
-                  height: "30px",
-                }}
-                src={no}
-                alt=""
-              />
+              <img className="cartpay-card-div-box4-vs-im2" src={no} alt="" />
             </div>
           </div>
 
-
-
-          <div
-            style={{
-              width: "40%",
-              height: "60%",
-            //   border: "1px solid red",
-              marginTop: "5px",
-              display: "flex",
-            //   marginLeft: "20px",
-            //   justifyContent:"left"
-            }}
-          >
-            <div
-              style={{
-                width: "10%",
-                height: "100%",
-                // border: "1px solid green",
-              }}
-            >
-              <input type="radio" style={{ width: "14px", height: "14px",float:"left", }} />
+          <div className="cartpay-card-div-box5">
+            <div className="cartpay-card-div-box5-ipbox">
+              <input className="cartpay-card-div-box5-ip" type="radio" />
             </div>
 
-            <div
-              style={{
-                width: "80%",
-                height: "100%",
-                // border: "1px solid blue",
-              }}
-            >
-              <img style={{ width: "100%", height: "100%" }} src={cd} alt="" />
-              <div
-                style={{
-                  width: "45px",
-                  height: "27px",
-                  backgroundColor: "white",
-                  borderRadius: "5px",
-                  position: "relative",
-                  top: "-144px",
-                  left: "29px",
-                }}
-              ></div>
-              <img
-                style={{
-                  position: "relative",
-                  top: "-171px",
-                  left: "-105px",
-                  width: "31px",
-                  height: "28px",
-                }}
-                src={sbi}
-                alt=""
-              />
+            <div className="cartpay-card-div-box5-imdiv">
+              <img className="cartpay-card-div-box5-imdiv-im" src={cd} alt="" />
 
-              <div
-                style={{
-                  width: "48px",
-                  height: "26px",
-                  backgroundColor: "white",
-                  borderRadius: "13px",
-                  position: "relative",
-                  top: "-121px",
-                  left: "234px",
-                }}
-              ></div>
+              <button className="cartpay-card-div-box5-btn1">
+                <img className="cartpay-card-div-box6-im1" src={sbi} alt="" />
+              </button>
 
-              <img
-                style={{
-                  position: "relative",
-                  top: "-150px",
-                  left: "189px",
-                  width: "30px",
-                  height: "30px",
-                }}
-                src={vs}
-                alt=""
-              />
+              {/* <div className="cartpay-card-div-box6-plain"></div> */}
 
-              <img
-                style={{
-                  position: "relative",
-                  top: "-169px",
-                  left: "-29px",
-                  width: "168px",
-                  height: "30px",
-                }}
-                src={no}
-                alt=""
-              />
+              <button className="cartpay-card-div-box5-btn">
+                <img className="cartpay-card-div-box6-im3" src={vs} alt="" />
+              </button>
+
+              <img className="cartpay-card-div-box6-im3-no" src={no} alt="" />
             </div>
           </div>
         </div>
 
-
-        <hr
-          style={{
-            width: "100%",
-            height: "4px",
-            color: "grey",
-            margin: "0px",
-            backgroundColor:"#8C8C8C",
-            marginTop:"-40px"
-          }}
-        />
-
+        <hr className="cartpay-card-div-box7-htl-line" />
       </div>
 
+
+
+
       <div className="cartpay-div2">
-        <h4
-          style={{
-            width: "90%",
-            height: "20px",
-            // border: "1px solid black",
-            margin: "auto",
-            display: "flex",
-            textAlign: "left",
-            paddingTop: "10px",
-          }}
-        >
-          PRICE DETAILS
-        </h4>
-        <div
-          style={{
-            width: "90%",
-            height: "330px",
-            // border: "1px solid black",
-            margin: "auto",
-            display: "flex",
-            flexDirection: "column",
-            gap: "10px",
-          }}
-        >
-          <div
-            style={{
-              width: "100%",
-              height: "10%",
-              //   border: "1px solid blue",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              margin: "14px 0px",
-            }}
-          >
+        <h4 className="cartpay-div2-heading">PRICE DETAILS</h4>
+        <div className="cartpay-div2-price-details">
+          <div className="cartpay-div2-price">
             <p>Price (2)</p>
             <p>₹3999</p>
           </div>
 
-          <div
-            style={{
-              width: "100%",
-              height: "10%",
-              //   border: "1px solid blue",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              marginBottom: "10px",
-            }}
-          >
+          <div className="cartpay-div2-discount">
             <p>Discount</p>
             <p>₹999</p>
           </div>
 
-          <div
-            style={{
-              width: "100%",
-              height: "10%",
-              //   border: "1px solid blue",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              marginBottom: "10px",
-            }}
-          >
+          <div className="cartpay-div2-delivery">
             <p>Delivery Charges</p>
             <p>₹99</p>
           </div>
 
-          <div
-            style={{
-              width: "100%",
-              height: "10%",
-              //   border: "1px solid blue",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              margin: "10px 0px",
-            }}
-          >
+          <div className="cartpay-div2-amount">
             <h4>Total Amount</h4>
             <h4>₹4999</h4>
           </div>
@@ -418,23 +212,7 @@ const handleOrder = ()=>{
             You’ll save 999 on this order
           </p>
 
-          <button
-            style={{
-              width: "100%",
-              height: "40px",
-              // border: "1px solid black",
-              margin: "auto",
-              display: "flex",
-              color: "white",
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundColor: "black",
-              borderRadius: "8px",
-              fontSize: "20px",
-              // gap: "10px",
-            }}
-            onClick={handleOrder}
-          >
+          <button className="cartpay-div2-payment" onClick={handleOrder}>
             PROCEED TO PAYMENT
           </button>
         </div>
