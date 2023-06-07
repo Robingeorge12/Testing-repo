@@ -53,9 +53,9 @@ function AllRoutes() {
     
 <Routes>
 <Route path="/" element={<Home />} />
+
 <Route path="/login" element={<Login />} />
 <Route path="/signup" element={<Signup />} />
-
 <Route path="/navbar" element={<Navbar />} />
 
 <Route path="/homepage" element={<HomePage />} />
@@ -67,6 +67,7 @@ function AllRoutes() {
 <Route path="/visit" element={<Visited />} />
 <Route path="/footer" element={<Footer />} />
 <Route path="/coppy" element={<CoppyRight />} />
+
 <Route path="/product" element={<ProductPage />} />
 <Route path="/moreproduct" element={<MoreProduct />} />
 <Route path="/customize" element={<Customize />} />
