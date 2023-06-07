@@ -80,19 +80,19 @@ function Signup() {
               <input type="password" placeholder='Password' onChange={(e)=>setPassword(e.target.value)} />
             </div>
 
-<div style={{ fontSize:"12px", display:"flex", alignItems:"center",width:"100%",height:"40px" ,textAlign:"left"}}>
+<div  className="signup-form-inner-box-div1">
    <Link to="" style={{textDecoration:"none"}}><p style={{color:"grey"}}>Forgot Password?</p></Link> 
-    <h4>Reset Now</h4>
+    <h4  className="signup-form-inner-box-div1-h4">Reset Now</h4>
 </div>
 
-<div style={{ fontSize:"18px", display:"flex", alignItems:"center",width:"100%",height:"40px" ,textAlign:"left"}}>
+<div className="signup-form-inner-box-div2" >
 <p style={{fontSize:"12px"}}>By continuing,I agree to the,</p>
 <h3 style={{fontSize:"12px"}}>Terms of Use</h3>
 <p style={{fontSize:"12px"}}>&</p>
 <h3 style={{fontSize:"12px"}}>Privacy Policy</h3>
 </div>
 
-<div style={{textAlign:"center"}}><button onClick={handleSubmit} style={{backgroundColor:"grey",width:"100%",height:"40px",border:"none",borderRadius:"5px",color:"white"}}>SUBMIT</button></div>
+<div className="signup-form-inner-box-div2-btn-div" ><button onClick={handleSubmit} className="signup-form-inner-box-div2-btn" >SUBMIT</button></div>
 
 <div style={{display:"flex", alignItems:"center",gap:"5px"}}>
     <p style={{fontSize:"12px"}}>Or</p>
