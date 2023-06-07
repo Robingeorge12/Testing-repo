@@ -689,6 +689,7 @@ h5 {
   color: grey;
   align-items: center;
   margin-top: -40px;
+  /* border: 1px solid red; */
 }
 .product-container-box2-box3-div4-color-div1 {
   width: 150px;
@@ -707,12 +708,17 @@ h5 {
   font-size: 20px;
   margin-left: -300px;
 }
+
+/* {................................................................} */
+
 .product-container-box2-box3-div4-color-div1-im2-div1 {
   display: flex;
   color: grey;
   align-items: center;
   margin-top: -40px;
-  padding: 0px;
+  /* padding: 0px; */
+  /* border: 2px solid blue; */
+  /* height: 30px; */
 }
 .product-container-box2-box3-div4-color-div1-im2-div1-im1 {
   width: 150px;
@@ -729,13 +735,17 @@ h5 {
   font-size: 20px;
   margin-left: -228px;
 }
+
+/* {..................................} */
+
 .product-container-box2-box3-div4-color-div1-im2-div1-box1 {
   display: flex;
   color: grey;
   align-items: center;
   margin-top: -40px;
+  /* border:2px solid green; */
 }
-.product-container-box2-box3-div4-color-div1-im2-div1-im3 {
+.product-container-box2-box3-div4-color-div1-im2-div1-im4 {
   margin-left: 4px;
 }
 .product-container-box2-box3-div4-color-div1-im2-div1-div2 {
@@ -849,6 +859,35 @@ h5 {
   border: none;
   background-color: white;
 }
+.product-container-box2-box3-div5-inner-icon-ptags {
+  font-size: 18px;
+  font-weight: 500;
+}
+.product-exp-box2-div2-box1-div2-pat {
+  text-align: left;
+  margin: 0px;
+  color: grey;
+  font-size: 12px;
+}
+.product-exp-box2-div2-box1-div2-solid{
+
+  text-align: left;
+  margin: 0px;
+  font-size: 12px;
+}
+.product-exp-box2-div2-box1-div2-occ{
+
+  text-align: left;
+  margin: 0px;
+  color: grey;
+  font-size: 12px;
+}
+.product-exp-box2-div2-box1-div2-cas{
+  text-align: left;
+  margin: 0px;
+  font-size: 12px;
+}
+
 
 @media screen and (max-width: 1440px) {
   .product-container-box1 {
@@ -884,4 +923,129 @@ h5 {
     margin-left: 20px;
     /* margin: 0px 120px 0px 0px; */
   }
+  .product-container-box2-box3-div5-inner-icon-ptags {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 13px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-container-box1-div2-box6 {
+    width: 576px;
+  }
+  .product-container-box2-box1 {
+    width: 42%;
+    height: 90%;
+    border: 2px solid rgb(7, 173, 210);
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    margin-left: -150px;
+    /* margin-left: -500px; */
+  }
+
+  .product-container-box2 {
+    width: 977px;
+    height: 400px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-container-box2-box1 {
+    width: 404px;
+    height: 90%;
+    border: 2px solid rgb(7, 173, 210);
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    margin-left: -76px;
+    /* margin-left: -500px; */
+  }
+  .product-container-box2-box3 {
+    width: 548px;
+    height: 90%;
+    /* border: 2px solid rgb(128, 0, 62); */
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 80px;
+  }
+  .product-container-box2-box1-ptag1 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .product-container-box2-box1-ptag2 {
+    font-size: 12px;
+  }
+  .product-container-box2-box1-ptag3 {
+    font-size: 12px;
+  }
+
+  .product-exp-box1 > div > h5 {
+    font-size: 11px;
+  }
+  .product-exp-box1 > div > p {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .product-exp-box2 > h5 {
+    font-size: 11px;
+  }
+
+  .product-exp-box2-div2 > p,
+  h6 {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .product-exp-box2-div2-h6 {
+    text-align: left;
+    margin: 0px;
+    font-size: 11px;
+  }
+  .product-exp-box2-div2-box1-ptag8 {
+    font-size: 11px;
+  }
+  .product-exp-box2-div2-box1-ptag8-h6 {
+    font-size: 11px;
+  }
+  .product-exp-box2-div2-box1-div2-p2-tag {
+    font-size: 11px;
+  }
+  .product-exp-box2-div2-box1-div2-h6-tag {
+    font-size: 11px;
+  }
+  .product-exp-box2-div2-box1-div2-p4-tag {
+    font-size: 11px;
+  }
+
+  .product-exp-box2-div2-box1-div2-p4-tag + h6 {
+    font-size: 11px !important;
+  }
+  .product-exp-box2-div2-box1-div2-pat {
+    font-size: 11px;
+}
+.product-exp-box2-div2-box1-div2-solid{
+
+  text-align: left;
+  margin: 0px;
+  font-size: 11px;
+}
+.product-exp-box2-div2-box1-div2-occ{
+
+  text-align: left;
+  margin: 0px;
+  color: grey;
+  font-size: 11px;
+}
+.product-exp-box2-div2-box1-div2-cas{
+  text-align: left;
+  margin: 0px;
+  font-size: 11px;
+}
 }

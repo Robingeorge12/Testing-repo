@@ -272,42 +272,28 @@ function ProductPage() {
                   <div>
                     <div style={{ marginTop: "10px" }}>
                       <p
-                        style={{
-                          textAlign: "left",
-                          margin: "0px",
-                          color: "grey",
-                          fontSize: "12px",
-                        }}
+                      className="product-exp-box2-div2-box1-div2-pat"
+                    
                       >
                         Pattern Type
                       </p>
                       <h6
-                        style={{
-                          textAlign: "left",
-                          margin: "0px",
-                          fontSize: "12px",
-                        }}
+                       className="product-exp-box2-div2-box1-div2-solid"
+                    
                       >
                         Solid
                       </h6>
                     </div>
                     <div style={{ marginTop: "10px" }}>
                       <p
-                        style={{
-                          textAlign: "left",
-                          margin: "0px",
-                          color: "grey",
-                          fontSize: "12px",
-                        }}
+                       className="product-exp-box2-div2-box1-div2-occ"
+                    
                       >
                         Occation
                       </p>
                       <h6
-                        style={{
-                          textAlign: "left",
-                          margin: "0px",
-                          fontSize: "12px",
-                        }}
+                       className="product-exp-box2-div2-box1-div2-cas"
+                    
                       >
                         Casual
                       </h6>
@@ -357,15 +343,18 @@ function ProductPage() {
                 </div>
               </div>
 
+
+
+
               <div className="product-container-box2-box3-div4-color-div1-im2-div1">
                 4{" "}
                 <img
-                  className="product-container-box2-box3-div4-color-div1-im2-div1-im1"
+                
                   style={{ marginLeft: "4px" }}
                   src={vect}
                   alt=""
                 />
-                <div>
+                <div className="product-container-box2-box3-div4-color-div1-im2-div1-im1">
                   <img
                     className="product-container-box2-box3-div4-color-div1-im2-div1-im2"
                     src={gn}
@@ -382,10 +371,13 @@ function ProductPage() {
                 </div>
               </div>
 
+
+
+
               <div className="product-container-box2-box3-div4-color-div1-im2-div1-box1">
                 3{" "}
                 <img
-                  className="product-container-box2-box3-div4-color-div1-im2-div1-im3"
+                  className="product-container-box2-box3-div4-color-div1-im2-div1-im4"
                   src={vect}
                   alt=""
                 />
@@ -468,7 +460,7 @@ function ProductPage() {
                       5
                       <CiStar className="product-container-box2-box3-div5-inner-icon" />
                     </button>
-                    <p style={{ fontSize: "18px", fontWeight: "500" }}>
+                    <p className="product-container-box2-box3-div5-inner-icon-ptags" >
                       L size , it's really wonderful
                     </p>
                   </div>
