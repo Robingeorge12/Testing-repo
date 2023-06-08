@@ -15,7 +15,7 @@ function Footer() {
 <div className='footer-div'>
 
 <div className='footer-box1'>
-    <div><h3>Contact Us</h3></div>
+    <div className='footer-head1'><h3>Contact Us</h3></div>
     <div>
         <p>+91 00045430</p>
         <p>Write to:tailux@gmail.com</p>
@@ -24,7 +24,7 @@ function Footer() {
     </div>
 </div>
 <div className='footer-box2'>
-<div><h3>Orders</h3></div>
+<div className='footer-head2'><h3>Orders</h3></div>
     <div>
         <p>Customized Products</p>
         <p>Payments & Shipping</p>
@@ -33,7 +33,7 @@ function Footer() {
     </div>
 </div>
 <div className='footer-box3'>
-<div><h3>About</h3></div>
+<div  className='footer-head3'><h3>About</h3></div>
     <div>
         <p>How customization works</p>
         <p>Size Charts</p>

@@ -5,9 +5,8 @@ import { AiOutlineHeart, AiOutlineStar, AiOutlineRight } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 
 function Customize() {
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
-  
   return (
     <div>
       <div className="customize-heading">
@@ -27,62 +26,35 @@ function Customize() {
                 <p>Punge Floral Georgette Dress</p>
               </div>
               <div className="customize-container-div1-details-wish">
-                <div>
-                  <p style={{ fontSize: "18px", fontWeight: "700" }}>$199</p>
+                <div className="customize-container-div1-details-wish-headdiv">
+                  <p className="customize-container-div1-details-wish-heading">
+                    $199
+                  </p>
                 </div>
-                <div>
-                  <p
-                    style={{
-                      color: "grey",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                      marginLeft: "20px",
-                    }}
-                  >
+                <div className="customize-container-div1-details-wish-mrpdiv">
+                  <p className="customize-container-div1-details-wish-mrp">
                     MRP 199
                   </p>
                 </div>
                 <div className="custom-rating">
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "5px",
-                      alignItems: "center",
-                      border: "1px solid black",
-                      borderRadius: "4px",
-                      width: "100%",
-                      height: "80%",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      marginTop: "5px",
-                      padding: "0px 4px",
-                      marginLeft: "20px",
-                    }}
-                  >
+                  <div className="custom-rating-div">
                     <p>{"4.1"}</p>
                     <AiOutlineStar style={{ color: "green" }} />
-                    <hr
-                      style={{
-                        transform: " rotate(180deg)",
-                        height: "100%",
-
-                        color: "black",
-                      }}
-                    />
+                    <hr className="custom-rating-div-hr" />
                     <p>2.6k Ratings</p>
                   </div>
                 </div>
               </div>
 
               <div className="customize-tax-head">
-                <p style={{ color: "green", textAlign: "left", margin: "0px" }}>
+                <p className="customize-tax-head-ptag">
                   Inclusive of all taxes
                 </p>
               </div>
 
               <div className="customize-select-head">
                 <div className="customize-select">
-                  <label>
+                  <label className="customize-select-label">
                     Qty
                     <select
                       name=""
@@ -96,25 +68,14 @@ function Customize() {
                     </select>
                   </label>
                 </div>
-                <div style={{ marginTop: "20px" }}>
+                <div className="customize-select-hearticon">
                   <AiOutlineHeart />
                 </div>
               </div>
 
               <div className="customize-size-chart">
-                <div
-                  style={{ display: "flex", gap: "5px", alignItems: "center" }}
-                >
-                  <p
-                    style={{
-                      color: "black",
-                      fontWeight: "300",
-                      textAlign: "left",
-                      fontSize: "12px",
-                    }}
-                  >
-                    SIZE CHART
-                  </p>
+                <div className="customize-size-chart-div">
+                  <p className="customize-size-chart-ptag">SIZE CHART</p>
                   <AiOutlineRight />
                 </div>
                 <div className="product-size-button">
@@ -143,37 +104,17 @@ function Customize() {
 
           <div className="customize-container-div1-box2">
             <div className="customize-container-box2-box1">
-              <p
-                style={{
-                  fontSize: "30px",
-                  fontWeight: "700",
-                  textAlign: "left",
-                  margin: "0px",
-                  padding: "0px",
-                }}
-              >
+              <p className="customize-container-box2-box1-ptag">
                 ABOUT THE PRODUCT
               </p>
-              <div>
-                <p
-                  style={{
-                    fontSize: "14px",
-                    textAlign: "justify",
-                    fontWeight: "400",
-                  }}
-                >
+              <div className="customize-container-box2-box1-cont-div">
+                <p className="customize-container-box2-box1-cont-div-ptag">
                   Be as specific as possible with your product copy and make
                   sure you are clearly describing features and benefits. Don’t
                   just say a product is high-quality; let shoppers come to that
                   same conclusion through the product features and benefits.
                 </p>
-                <p
-                  style={{
-                    fontSize: "14px",
-                    textAlign: "justify",
-                    fontWeight: "400",
-                  }}
-                >
+                <p className="customize-container-box2-box1-cont-div-ptag2">
                   Good product descriptions should cover two main aspects:
                   features and benefits. These are the bread and butter of your
                   product page copy. A feature is a quality or a function of a
@@ -200,133 +141,55 @@ function Customize() {
                   </h5>
                   <div className="product-exp-box2-details">
                     <div className="product-exp-box2-div">
-                      <div style={{ marginTop: "10px" }}>
-                        <p
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            color: "grey",
-                            fontSize: "12px",
-                          }}
-                        >
+                      <div className="product-exp-box2-div-box1">
+                        <p className="product-exp-box2-div-box1-sleev">
                           Sleeve Length
                         </p>
-                        <h6
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            fontSize: "12px",
-                          }}
-                        >
+                        <h6 className="product-exp-box2-div-box1-log">
                           Long Sleeves
                         </h6>
                       </div>
-                      <div style={{ marginTop: "10px" }}>
-                        <p
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            color: "grey",
-                            fontSize: "12px",
-                          }}
-                        >
+                      <div className="product-exp-box2-div-box1-colardiv">
+                        <p className="product-exp-box2-div-box1-collar">
                           Collar
                         </p>
-                        <h6
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            fontSize: "12px",
-                          }}
-                        >
+                        <h6 className="product-exp-box2-div-box1-spcol">
                           Spread Collar
                         </h6>
                       </div>
                     </div>
                     <div>
-                      <div style={{ marginTop: "10px" }}>
-                        <p
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            color: "grey",
-                            fontSize: "12px",
-                          }}
-                        >
+                      <div className="product-exp-box2-div-box1-fitdiv">
+                        <p className="product-exp-box2-div-box1-fitdiv-ptag">
                           Fit
                         </p>
-                        <h6
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            fontSize: "12px",
-                          }}
-                        >
+                        <h6 className="product-exp-box2-div-box1-regh6">
                           Regular Fit
                         </h6>
                       </div>
-                      <div style={{ marginTop: "10px" }}>
-                        <p
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            color: "grey",
-                            fontSize: "12px",
-                          }}
-                        >
+                      <div className="product-exp-box2-div-box1-lendiv">
+                        <p className="product-exp-box2-div-box1-lendiv-len">
                           Length
                         </p>
-                        <h6
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            fontSize: "12px",
-                          }}
-                        >
+                        <h6 className="product-exp-box2-div-box1-regular-h6">
                           Regular
                         </h6>
                       </div>
                     </div>
                     <div>
-                      <div style={{ marginTop: "10px" }}>
-                        <p
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            color: "grey",
-                            fontSize: "12px",
-                          }}
-                        >
+                      <div className="product-exp-box2-div-box1-patdiv">
+                        <p className="product-exp-box2-div-box1-patdiv-ptag">
                           Pattern Type
                         </p>
-                        <h6
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            fontSize: "12px",
-                          }}
-                        >
+                        <h6 className="product-exp-box2-div-box1-solid-h6">
                           Solid
                         </h6>
                       </div>
-                      <div style={{ marginTop: "10px" }}>
-                        <p
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            color: "grey",
-                            fontSize: "12px",
-                          }}
-                        >
+                      <div className="product-exp-box2-div-box1-occdiv">
+                        <p className="product-exp-box2-div-box1-occdiv-ptag">
                           Occation
                         </p>
-                        <h6
-                          style={{
-                            textAlign: "left",
-                            margin: "0px",
-                            fontSize: "12px",
-                          }}
-                        >
+                        <h6 className="product-exp-box2-div-box1-cas-h6">
                           Casual
                         </h6>
                       </div>
@@ -340,173 +203,141 @@ function Customize() {
         <div className="customize-container-div2"></div>
 
         <div className="customize-container-div3">
-          <div>
-            <p
-              style={{
-                color: "black",
-                fontSize: "25px",
-                textAlign: "left",
-                fontWeight: "700",
-                margin: "0px",
-              }}
-            >
+          <div className="customize-container-div3-box1">
+            <p className="customize-container-div3-box1-ptag">
               Customized Size and Fittings
             </p>
-            <p
-              style={{
-                color: "grey",
-                fontSize: "14px",
-                textAlign: "left",
-                margin: "0px",
-              }}
-            >
+            <p className="customize-container-div3-box1-ptag-det">
               Select from a saved size or add new size
             </p>
           </div>
           <div className="customize-container-div3-pic">
-            <p
-              style={{ textAlign: "left",fontSize:"22px",fontWeight:"700", }}
-            >
-              Saved Sizes
-            </p>
+            <p className="customize-container-div3-pic-sizes">Saved Sizes</p>
 
             <div className="customized-pic-button">
               <div className="customized-pic-button-div1">
                 <div className="customized-pic-button-img">
-                  <img src={"https://i0.wp.com/ctmirror-images.s3.amazonaws.com/wp-content/uploads/2021/01/dummy-man-570x570-1.png?fit=570%2C570&ssl=1"} alt="" />
+                  <img
+                    src={
+                      "https://i0.wp.com/ctmirror-images.s3.amazonaws.com/wp-content/uploads/2021/01/dummy-man-570x570-1.png?fit=570%2C570&ssl=1"
+                    }
+                    alt=""
+                  />
                 </div>
-                <div
-                  style={{
-                    width: "100%",
-                    height: "14%",
-                    // border: "1px solid blue",
-                    boxSizing: "borderBox",
-                    margin: "0px",
-                    padding: "0px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
+                <div className="customized-pic-button-div1-name">
                   <p>Manju</p>
                 </div>
               </div>
 
               <div className="customized-pic-button-div1">
                 <div className="customized-pic-button-img">
-                  <img src={"https://www.aquasafemine.com/wp-content/uploads/2018/06/dummy-woman-570x570.png"} alt="" />
+                  <img
+                    src={
+                      "https://www.aquasafemine.com/wp-content/uploads/2018/06/dummy-woman-570x570.png"
+                    }
+                    alt=""
+                  />
                 </div>
-                <div
-                  style={{
-                    width: "100%",
-                    height: "14%",
-                    // border: "1px solid blue",
-                    boxSizing: "borderBox",
-                    margin: "0px",
-                    padding: "0px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
+                <div className="customized-pic-button-div1-box1">
                   <p>Anju</p>
                 </div>
               </div>
 
               <div className="customized-pic-button-div1">
                 <div className="customized-pic-button-img">
-                  <img src={"https://www.aquasafemine.com/wp-content/uploads/2018/06/dummy-woman-570x570.png"} alt="" />
+                  <img
+                    src={
+                      "https://www.aquasafemine.com/wp-content/uploads/2018/06/dummy-woman-570x570.png"
+                    }
+                    alt=""
+                  />
                 </div>
-                <div
-                  style={{
-                    width: "100%",
-                    height: "14%",
-                    // border: "1px solid blue",
-                    boxSizing: "borderBox",
-                    margin: "0px",
-                    padding: "0px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
+                <div className="customized-pic-button-div1-box2-namebox">
                   <p>Anjali</p>
                 </div>
               </div>
 
               <div className="customized-pic-button-div2">
                 <div className="customized-pic-button-img">
-                  <button
-                    style={{
-                      width: "50%",
-                      height: "50%",
-                      borderRadius: "50%",
-                      backgroundColor: "grey",
-                    }}
-                  >
-                    +
-                  </button>
+                  <button className="customized-pic-button-img-btn">+</button>
                 </div>
-                <div
-                  style={{
-                    width: "100%",
-                    height: "14%",
-                    // border: "1px solid blue",
-                    boxSizing: "borderBox",
-                    margin: "0px",
-                    padding: "0px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
+                <div className="customized-pic-button-div2-addsize">
                   <p>add new size </p>
                 </div>
               </div>
-
             </div>
 
-<div><p style={{fontSize:"22px",fontWeight:"700",textAlign:"left"}}>Select Colors</p></div>
+            <div className="customized-pic-button-div2-color-div">
+              <p className="customized-pic-button-div2-color-div-p1">
+                Select Colors
+              </p>
+            </div>
 
             <div className="customize-color-div">
-                <div>
-                  <button style={{ backgroundColor: "brown" }}></button>
-                </div>
-                <div>
-                  <button style={{ backgroundColor: "green" }}></button>
-                </div>
-                <div>
-                  <button style={{ backgroundColor: "blue" }}></button>
-                </div>
-                <div>
-                  <button style={{ backgroundColor: "white" }}></button>
-                </div>
-                <div>
-                  <button style={{ backgroundColor: "red" }}></button>
-                </div>
-                <div>
-                  <button style={{ backgroundColor: "yellow" }}></button>
-                </div>
+              <div>
+                <button style={{ backgroundColor: "brown" }}></button>
               </div>
-
+              <div>
+                <button style={{ backgroundColor: "green" }}></button>
+              </div>
+              <div>
+                <button style={{ backgroundColor: "blue" }}></button>
+              </div>
+              <div>
+                <button style={{ backgroundColor: "white" }}></button>
+              </div>
+              <div>
+                <button style={{ backgroundColor: "red" }}></button>
+              </div>
+              <div>
+                <button style={{ backgroundColor: "yellow" }}></button>
+              </div>
+            </div>
           </div>
-          <div style={{display:"flex",flexDirection:"column"}}>
-<div style={{float:"left",marginTop:"20px",width:"150px"}}><button style={{float:"left",width:"120px",height:"50px",backgroundColor:"black",border:"none",color:"white"}}>ADDED TO BAG</button></div>
-<div style={{float:"left"}}><p style={{fontSize:"25px",fontWeight:"700",textAlign:"left"}}>Want to Customize more ?</p></div>
-</div>
-<div style={{display:"flex",flexDirection:"column"}}>
-<div style={{float:"left",width:"300px",borderRadius:"5px"}}><button style={{backgroundImage:"radial-gradient(aqua,blue,pink)",width:"100%",fontSize:"20px",height:'100%',padding:"8px 10px 8px 10px",border:"none",borderRadius:"5px"}}>OPEN IN TAILUX STUDIO</button></div>
+          <div className="customized-pic-button-div2-color-div-buttons">
+            <div className="customized-pic-button-div2-color-div-buttons-btn1div">
+              <button className="customized-pic-button-div2-color-div-buttons-btn1">
+                ADDED TO BAG
+              </button>
+            </div>
+            <div style={{ float: "left" }}>
+              <p className="customized-pic-button-div2-details-more">
+                Want to Customize more ?
+              </p>
+            </div>
+          </div>
+          <div className="customized-pic-button-div2-details-last" >
+            <div  className="customized-pic-button-div2-details-last-div1"  >
+              <button
+              className="customized-pic-button-div2-details-last-div1-stud"
+         
+              >
+                OPEN IN TAILUX STUDIO
+              </button>
+            </div>
 
-<div style={{float:"left"}}>
-  <p style={{textAlign:"left",fontSize:"18px",fontWeight:"600",}}>What is TailUx studio?</p>
-  <p style={{textAlign:"left",fontSize:"14px",fontWeight:"400",textAlign:"justify"}}>
-  What is TailuX studio?
-TailuX Studio is a feature that allows users to customize their fashion products online in an efficient way. It enables users to become their own fashion designer by providing tools and options to customize their clothing according to their preferences and style. With TailuX Studio,
- users can select fabrics, colors, patterns, and other design elements to create unique clothing designs. 
-  </p>
-  </div>
-{/* <div><p>pjpih87fgotyuguiiiiiy</p></div> */}
-</div>
+            <div className="customized-pic-button-div2-details-last-text" >
+              <p
+              className="customized-pic-button-div2-details-last-text-p1"
+           
+              >
+                What is TailUx studio?
+              </p>
+              <p
+               className="customized-pic-button-div2-details-last-text-p2"
+         
+              >
+                What is TailuX studio? TailuX Studio is a feature that allows
+                users to customize their fashion products online in an efficient
+                way. It enables users to become their own fashion designer by
+                providing tools and options to customize their clothing
+                according to their preferences and style. With TailuX Studio,
+                users can select fabrics, colors, patterns, and other design
+                elements to create unique clothing designs.
+              </p>
+            </div>
+            {/* <div><p>pjpih87fgotyuguiiiiiy</p></div> */}
+          </div>
         </div>
       </div>
     </div>
